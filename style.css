@@ -1,3 +1,4 @@
+/* Body */
 html,
 body {
 	margin: 0;
@@ -6,4 +7,23 @@ body {
 body {
 	background-color: #222222;
 	color: #f2f2f2;
+}
+
+/* Grøn linje*/
+body hr {
+	border: none; /* Fjerner standardkant */
+	height: 2px;
+	background-color: #cdd687;
+	width: 100%; /* Gør linjen responsiv */
+	max-width: 1211px; /* Maksimal længde på 1211px*/
+	margin: 0 auto; /* Linjen bliver i centrum*/
+}
+
+/* Mobilstørrelse */
+@media (max-width: 768px) {
+	body hr {
+		max-width: 90%; /* Sætter maksimal bredde til 90% på mobil */
+		margin-left: 5%; /* Tilføjer lidt afstand til venstre */
+		margin-right: 5%; /* Tilføjer lidt afstand til højre */
+	}
 }
