@@ -29,15 +29,17 @@
 						<p class="navbar__logoTekst">J.Svarre</p>
 					</a>
 				</div>
+
 				<div class="navbar__links">
-					<ul>
-						<li>
+					<!-- ER DETTE NØDVENDIGT? -->
+					<ul class="navbar__linksList">
+						<li class="navbar__linksListItem">
 							<a href="omMig.html">Om mig</a>
 						</li>
-						<li>
+						<li class="navbar__linksListItem">
 							<a href="projekter.html">Projekter</a>
 						</li>
-						<li>
+						<li class="navbar__linksListItem">
 							<a href="kontakt.html">Kontakt</a>
 						</li>
 					</ul>
@@ -46,7 +48,7 @@
 		</header>
 
 		<main>
-			<!--ER DETTE KORREKT IFT. BEM (jeg har ikke laves class ved header, main og footer)?-->
+			<!--ER DETTE KORREKT IFT. BEM (jeg har ikke laves class ved header, main og footer, men ved section, da jeg gerne vil rykke rundt på dem i adskilte bokse)?-->
 			<section class="front">
 				<h1 class="front__navn">Josefine Svarre</h1>
 				<h2 class="front__beskrivelse">
@@ -69,9 +71,9 @@
 
 					<a href="omMig.html" class="omMig__link">Læs mere</a>
 				</p>
-
-				<hr class="main__hr" />
 			</section>
+
+			<hr class="main__hr" />
 
 			<section class="projekter">
 				<h3 class="projekter__overskrift">Lidt om mine projekter</h3>
@@ -92,24 +94,25 @@
 			<!--INDSÆT BILLEDER HER I HVER DERES SECTION MED EN BLOCK-->
 		</main>
 
-		<footer>
-			<!--INDSÆT LOGO HER-->
-			<section class="footerKontakt">
-				<h3>Kontakt</h3>
-				<p>Josefine Svarre</p>
-				<p><a href="tel:+4520912213">20 91 22 14</a></p>
+		<footer class="footer">
+			<section class="footer__Kontakt">
+				<h3 class="footer__overskrift">Kontakt</h3>
+				<p class="footer_tekst">Josefine Svarre</p>
+				<p class="footer_tekst"><a href="tel:+4520912213">20 91 22 14</a></p>
 				<p>
 					<a href="josefinesvarre@hotmail.com">Josefinesvarre@hotmail.com</a>
 				</p>
 			</section>
 
-			<section class="footerLinks">
-				<p>Om mig</p>
-				<p>Projekter</p>
-				<p>Kontakt</p>
+			<section class="footer__links">
+				<p class="footer__tekst">Om mig</p>
+				<p class="footer__tekst">Projekter</p>
+				<p class="footer__tekst">Kontakt</p>
 			</section>
 
-			<section class="footerCoyright">Copyright © 2025 Josefine Svarre</section>
+			<section class="footer__Coyright">
+				<p class="footer__tekst">Copyright © 2025 Josefine Svarrre</p>
+			</section>
 		</footer>
 	</body>
 </html>
