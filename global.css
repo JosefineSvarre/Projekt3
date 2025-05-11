@@ -69,3 +69,29 @@ a {
 a:hover {
 	color: #6e98c2;
 }
+
+/* Tablet- og desktop-størrelse (over 768px) */
+@media (min-width: 768px) {
+	h1 {
+		font-size: 76px;
+	}
+
+	h2 {
+		font-size: 30px;
+		line-height: 45px;
+	}
+
+	p {
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	h4 {
+		font-size: 20px;
+		line-height: 42px;
+	}
+
+	a {
+		font-size: 18px;
+	}
+}
