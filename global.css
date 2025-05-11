@@ -1,12 +1,71 @@
 /* Global style - mobile first */
 
 /* Basal styles */
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
 body {
 	background-color: #222222;
 	color: #f2f2f2;
+	font-family: "Lato", sans-serif;
+	margin: 0;
+	padding: 0;
+	line-height: 1.75; /* Standard linjehøjde */
+}
+hr {
+	border: none; /* Fjerner standardkant */
+	background-color: #cdd687;
+	height: 2px;
+	width: 90%;
+	margin: 2rem auto; /* Centrerer horisontal linje */
+}
+/* Typografi */
+h1 {
+	font-family: "Playfair Display", serif;
+	font-weight: 800;
+	font-size: 40px;
+	letter-spacing: 0.05em;
+}
+
+h2 {
+	font-family: "Playfair Display", serif;
+	font-weight: 400;
+	font-size: 24px;
+	letter-spacing: 0.1em;
+	line-height: 28px;
+}
+
+h3 {
+	font-family: "Playfair Display", serif;
+	font-weight: 800;
+	font-size: 30px;
+	letter-spacing: 0.05em;
+	color: #d68c87;
+}
+
+h4 {
+	font-family: "Lato", sans-serif;
+	font-style: italic;
+	font-size: 16px;
+	letter-spacing: 0.05em;
+	line-height: 40px;
+}
+
+p {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	letter-spacing: 0.1em;
+	line-height: 28px;
+}
+
+/* Links */
+a {
+	color: #f2f2f2;
+	font-family: "Lato", sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #6e98c2;
 }
