@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Optimér forbindelser til Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+		<!-- Importér Playfair Display og Lato med nødvendige vægte -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&family=Lato:ital,wght@0,400;0,600;1,400&display=swap"
+			rel="stylesheet">
+
 		<title>Josefine - Kontakt</title>
-		<link rel="stylesheet" href="global.css" />
+		<link rel="stylesheet" href="global.css">
 	</head>
 
 	<body>
-		<header>
-			<nav>
-				<a href="index.html">
-					<div class="logo">
-						<img src="images/logoHeader.svg" alt="Logo" />
-						<p>J.Svarre</p>
-					</div>
-				</a>
-
-				<div class="menu">
-					<ul>
-						<li>
-							<a href="omMig.html">Om mig</a>
-						</li>
-						<li>
-							<a href="projekter.html">Projekter</a>
-						</li>
-						<li>
-							<a href="kontakt.html">Kontakt</a>
-						</li>
-					</ul>
+		<header class="header">
+			<nav class="navbar">
+				<button class="navbar__toggle" aria-label="Toggle menu">
+					<!-- Knap for mobile menu -->
+					<span class="navbar__toggle-bar"></span>
+					<span class="navbar__toggle-bar"></span>
+					<span class="navbar__toggle-bar"></span>
+				</button>
+				<div class="navbar__logo">
+					<a class="navbar__logo-link" href="index.html">
+						<img
+							class="navbar__logo-image"
+							src="image/logoHeader.svg"
+							alt="Logo">
+						<p class="navbar__logo-text">J.Svarre</p>
+					</a>
 				</div>
+
+				<ul class="navbar__list">
+					<li class="navbar__item">
+						<a class="navbar__link" href="omMig.html">Om mig</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link" href="projekter.html">Projekter</a>
+					</li>
+					<li class="navbar__item">
+						<a class="navbar__link" href="kontakt.html">Kontakt</a>
+					</li>
+				</ul>
 			</nav>
 		</header>
 
