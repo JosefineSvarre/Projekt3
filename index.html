@@ -23,13 +23,12 @@
 				<div class="navbar__logo">
 					<a class="navbar__link" href="index.html">
 						<img
-							class="navbar__logo-image"
+							class="navbar__logoImage"
 							src="image/logoHeader.svg"
 							alt="Logo" />
-						<p class="navbar__logo-text">J.Svarre</p>
+						<p class="navbar__logoTekst">J.Svarre</p>
 					</a>
 				</div>
-
 				<div class="navbar__links">
 					<ul>
 						<li>
@@ -46,18 +45,19 @@
 			</nav>
 		</header>
 
-		<main class="main">
-			<section class="main__">
-				<h1>Josefine Svarre</h1>
-				<h2>
+		<main>
+			<!--ER DETTE KORREKT IFT. BEM (jeg har ikke laves class ved header, main og footer)?-->
+			<section class="front">
+				<h1 class="front__navn">Josefine Svarre</h1>
+				<h2 class="front__beskrivelse">
 					Grafisk himmelstormer med blik for mennesker og hænderne fulde af
 					farver, former og fortællinger.
 				</h2>
 			</section>
 
-			<section>
-				<h3>Lidt om mig</h3>
-				<p>
+			<section class="omMig">
+				<h3 class="omMig__overskrift">Lidt om mig</h3>
+				<p class="omMig__tekst">
 					Jeg er multimediedesign-studerende med passion for grafisk design,
 					branding og visuel kommunikation.
 
@@ -67,17 +67,16 @@
 					kreative miljøer, hvor idéer udvikles i fællesskab, og hvor æstetik og
 					funktion går hånd i hånd.<br /><br />
 
-					<a href="HUSK AT LAVE LINK!">Læs mere</a>
+					<a href="omMig.html" class="omMig__link">Læs mere</a>
 				</p>
 
-				<hr />
-				<!-- Dette er en linje -->
+				<hr class="main__hr" />
 			</section>
 
-			<section>
-				<h3>Lidt om mine projekter</h3>
+			<section class="projekter">
+				<h3 class="projekter__overskrift">Lidt om mine projekter</h3>
 
-				<p>
+				<p class="projekter__tekst">
 					Jeg arbejder i krydsfeltet mellem strategi og kreativitet - hvor data
 					bliver til indsigter, og idéer bliver til meningsfulde, digitale
 					løsninger. Jeg designer med nysgerrighed som drivkraft og brugeren som
@@ -87,11 +86,10 @@
 					<br />At skabe produkter, der vækker følelser, fremkalder reaktioner
 					og gør en forskel.<br /><br />
 
-					<a href="HUSK AT LAVE LINK!">Se projekter</a>
-
-					<!--INDSÆT BILLEDE HER-->
+					<a href="projekter.html" class="projekter__link">Se projekter</a>
 				</p>
 			</section>
+			<!--INDSÆT BILLEDER HER I HVER DERES SECTION MED EN BLOCK-->
 		</main>
 
 		<footer>
