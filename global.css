@@ -1,76 +1,139 @@
-/* Global style - mobile first */
+/* --------------------------- */
+/* GLOBAL STYLE - MOBILE FIRST */
+/* --------------------------- */
+:root {
+	--color-background: #222222;
+	--color-text: #f2f2f2;
+	--color-heading-h3: #d68c87;
+	--color-hr: #cdd687;
+	--color-link-hover: #6e98c2;
 
-/* Basal styles */
+	--font-primary: "Playfair Display", serif;
+	--font-secondary: "Lato", sans-serif;
+}
+
 body {
-	background-color: #222222;
-	color: #f2f2f2;
-	font-family: "Lato", sans-serif;
 	margin: 0;
 	padding: 0;
-	line-height: 1.75; /* Standard linjehøjde */
+	background-color: var(--color-background);
+	color: var(--color-text); /* standard farve for body*/
+	font-family: var(--font-secondary); /* standard font for body*/
 }
-hr {
-	border: none; /* Fjerner standardkant */
-	background-color: #cdd687;
-	height: 2px;
-	width: 90%;
-	margin: 2rem auto; /* Centrerer horisontal linje */
-}
-/* Typografi */
+
+/* ---------------------------------------- */
+/*               TYPOGRAFI                  */
+/* ---------------------------------------- */
+/* Her overskriver jeg min standardsettings */
 h1 {
-	font-family: "Playfair Display", serif;
+	font-family: var(--font-primary);
 	font-weight: 800;
 	font-size: 40px;
-	letter-spacing: 0.05em;
+	letter-spacing: 5%;
 }
 
 h2 {
-	font-family: "Playfair Display", serif;
+	font-family: var(--font-primary);
 	font-weight: 400;
 	font-size: 24px;
-	letter-spacing: 0.1em;
+	letter-spacing: 10%;
 	line-height: 28px;
 }
 
 h3 {
-	font-family: "Playfair Display", serif;
+	font-family: var(--font-primary);
 	font-weight: 800;
 	font-size: 30px;
-	letter-spacing: 0.05em;
-	color: #d68c87;
+	letter-spacing: 5%;
+	color: var(--color-heading-h3);
 }
 
 h4 {
-	font-family: "Lato", sans-serif;
+	font-family: var(--font-secondary);
 	font-style: italic;
 	font-size: 16px;
-	letter-spacing: 0.05em;
+	letter-spacing: 5%;
 	line-height: 40px;
 }
 
-p {
-	font-family: "Lato", sans-serif;
+p,
+a {
+	/* standardfont for både p & links (a)*/
+	font-family: var(--font-secondary);
 	font-weight: 400;
 	font-size: 16px;
-	letter-spacing: 0.1em;
+	letter-spacing: 10%;
 	line-height: 28px;
-}
-
-/* Links */
-a {
-	color: #f2f2f2;
-	font-family: "Lato", sans-serif;
-	font-weight: 600;
-	font-size: 16px;
-	letter-spacing: 0.1em;
+	color: var(--color-text);
 	text-decoration: none;
 }
 
 a:hover {
-	color: #6e98c2;
+	color: var(--color-link-hover);
+	font-weight: 600;
 }
 
-/* Tablet- og desktop-størrelse (over 768px) */
+hr.main__divider {
+	border: none; /* Fjerner standardkant */
+	height: 2px;
+	width: 90%; /* Standard bredde til mobil, 90% */
+	background-color: var(--color-hr);
+	margin: 2rem auto; /* Linjen bliver i centrum */
+}
+
+/* -------------------------- */
+/*    BURGERMENU TIL MOBIL    */
+/* -------------------------- */
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.navbar__toggle {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 30px;
+	height: 30px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	z-index: 999; /* sikre, at knappen ligger øverst */
+}
+
+.navbar__toggle-bar {
+	width: 100%;
+	height: 3px;
+	background-color: #f2f2f2;
+	border-radius: 2px;
+}
+
+.navbar__list {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	background-color: #222;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	display: none; /* skjult som default */
+	padding: 1rem;
+}
+
+.navbar__item {
+	margin: 0.5rem 0;
+}
+
+.navbar__list--active {
+	display: flex;
+}
+
+/* -------------------------- */
+/*      RESPONSIVE STYLES    */
+/* -------------------------- */
+
 @media (min-width: 768px) {
 	h1 {
 		font-size: 76px;
@@ -81,17 +144,71 @@ a:hover {
 		line-height: 45px;
 	}
 
-	p {
+	p,
+	a {
 		font-size: 18px;
-		line-height: 28px;
 	}
 
 	h4 {
 		font-size: 20px;
 		line-height: 42px;
 	}
+}
 
-	a {
-		font-size: 18px;
+@media (min-width: 768px) {
+	.navbar__toggle {
+		display: none;
 	}
+
+	.navbar__list {
+		display: flex !important;
+		position: static;
+		flex-direction: row;
+		align-items: center;
+		width: auto;
+		padding: 0;
+		gap: 2rem;
+	}
+}
+
+/* -------------------------- */
+/*   MERE SPECIFIK STYLING    */
+/* -------------------------- */
+
+.header {
+	padding: 1rem;
+}
+
+.navbar__logo-image {
+	width: 40px;
+	height: auto;
+}
+
+/* Writespace (ret i dette senere)*/
+.front__name,
+.front__description,
+.about__heading,
+.about__text,
+.projects__heading,
+.projects__text,
+.footer__heading,
+.footer__text {
+	margin: 1rem;
+}
+
+/* Lidt ekstra spacing og vægt til links*/
+.about__link,
+.projects__link {
+	font-weight: 600;
+	display: inline-block;
+	margin-top: 1rem;
+}
+
+.footer {
+	padding: 2rem;
+	background-color: #1a1a1a;
+}
+
+.footer__text a:hover {
+	color: var(--color-link-hover);
 }
