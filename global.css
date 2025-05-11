@@ -28,14 +28,14 @@ h1 {
 	font-family: var(--font-primary);
 	font-weight: 800;
 	font-size: 40px;
-	letter-spacing: 5%;
+	letter-spacing: 0.05em;
 }
 
 h2 {
 	font-family: var(--font-primary);
 	font-weight: 400;
 	font-size: 24px;
-	letter-spacing: 10%;
+	letter-spacing: 0.1em;
 	line-height: 28px;
 }
 
@@ -43,7 +43,7 @@ h3 {
 	font-family: var(--font-primary);
 	font-weight: 800;
 	font-size: 30px;
-	letter-spacing: 5%;
+	letter-spacing: 0.05em;
 	color: var(--color-heading-h3);
 }
 
@@ -51,7 +51,7 @@ h4 {
 	font-family: var(--font-secondary);
 	font-style: italic;
 	font-size: 16px;
-	letter-spacing: 5%;
+	letter-spacing: 0.05em;
 	line-height: 40px;
 }
 
@@ -61,7 +61,7 @@ a {
 	font-family: var(--font-secondary);
 	font-weight: 400;
 	font-size: 16px;
-	letter-spacing: 10%;
+	letter-spacing: 0.1em;
 	line-height: 28px;
 	color: var(--color-text);
 	text-decoration: none;
