@@ -8,28 +8,20 @@
 	</head>
 
 	<body>
-		<header>
-			<nav>
-				<a href="index.html">
-					<div class="logo">
-						<img src="images/logoHeader.svg" alt="Logo" />
-						<p>J.Svarre</p>
-					</div>
-				</a>
+		<header class="header">
+			<nav class="navbar">
+				<a href="index.html" class="navbar__logo">
+					<img class="navbar__logo-image" src="image/logoHeader.svg" alt="Logo">
+					<span class="navbar__logo-text">Josefine Svarre</span>
+  			</a>
 
-				<div class="menu">
-					<ul>
-						<li>
-							<a href="omMig.html">Om mig</a>
-						</li>
-						<li>
-							<a href="projekter.html">Projekter</a>
-						</li>
-						<li>
-							<a href="kontakt.html">Kontakt</a>
-						</li>
-					</ul>
-				</div>
+  			<button class="navbar__toggle" aria-label="Toggle menu">☰</button>
+				
+				<ul class="navbar__list">
+					<li><a href="omMig.html">Om mig</a></li>
+					<li><a href="projekter.html">Projekter</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+				</ul>
 			</nav>
 		</header>
 
@@ -130,5 +122,6 @@
 
 			<section class="footerCoyright">Copyright © 2025 Josefine Svarre</section>
 		</footer>
+		<script src="script.js"></script> <!-- script til burgermenu-->
 	</body>
 </html>
