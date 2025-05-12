@@ -91,6 +91,10 @@ hr.main__divider {
 	position: relative;
 }
 
+* {
+	border: 1px dotted greenyellow;
+}
+
 .navbar__toggle {
 	display: flex;
 	flex-direction: column;
@@ -177,6 +181,9 @@ hr.main__divider {
 
 .header {
 	padding: 1rem;
+	position: fixed; /* gør headeren fast i toppen */
+	top: 0;
+	z-index: 9999; /* sikre, at navbaren ligger øverst */
 }
 
 .navbar__logo-image {
@@ -217,3 +224,22 @@ hr.main__divider {
 /*   LEGER MED BILLEDE  */
 /* -------------------------- */
 /* Her er det vigtigt at have en container til billedet, så det kan skaleres korrekt */
+.front {
+	position: relative;
+	z-index: 1; /* sikrer, at billedet ligger under teksten */
+}
+
+.front__image {
+	width: 100%;
+	display: block;
+}
+
+.front__content {
+	position: absolute;
+	bottom: 1.5rem;
+	left: 1rem;
+	right: 1rem;
+	text-align: center;
+	padding: 1rem;
+	border-radius: 12px;
+}
