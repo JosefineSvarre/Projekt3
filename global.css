@@ -16,8 +16,12 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: var(--color-background);
-	color: var(--color-text); /* standard farve for body*/
+	color: var(--color-text); /* standard farve til tekst */
 	font-family: var(--font-secondary); /* standard font for body*/
+}
+
+* {
+	border: 1px dotted greenyellow;
 }
 
 /* ---------------------------------------- */
@@ -91,10 +95,6 @@ hr.main__divider {
 	position: relative;
 }
 
-* {
-	border: 1px dotted greenyellow;
-}
-
 .navbar__toggle {
 	display: flex;
 	flex-direction: column;
@@ -104,14 +104,15 @@ hr.main__divider {
 	background: none;
 	border: none;
 	cursor: pointer;
-	z-index: 999; /* sikre, at knappen ligger øverst */
+	z-index: 9999; /* sikre, at knappen ligger øverst */
 }
 
-.navbar__toggle-bar {
+.navbar__toggle {
 	width: 100%;
 	height: 3px;
 	background-color: #f2f2f2;
 	border-radius: 2px;
+	z-index: 9999; /* sikre, at knappen ligger øverst */
 }
 
 .navbar__list {
@@ -175,6 +176,28 @@ hr.main__divider {
 	}
 }
 
+/* Mobilvisning */
+@media (max-width: 768px) {
+	.navbar__list {
+		display: none; /* skjul menuen som udgangspunkt */
+	}
+
+	.navbar__toggle {
+		display: block; /* vis toggle i mobilvisning */
+	}
+
+	/* Du kan tilføje en aktiv klasse til at vise menuen, fx: */
+	.navbar__list.active {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 100%;
+		right: 1rem;
+		background-color: white;
+		padding: 1rem;
+	}
+}
+
 /* -------------------------- */
 /*   MERE SPECIFIK STYLING    */
 /* -------------------------- */
@@ -187,7 +210,7 @@ hr.main__divider {
 }
 
 .navbar__logo-image {
-	width: 40px;
+	width: 15px;
 	height: auto;
 }
 
@@ -242,4 +265,39 @@ hr.main__divider {
 	text-align: center;
 	padding: 1rem;
 	border-radius: 12px;
+}
+
+/* -------------------------- */
+/*      EKSPERIMENTERE        */
+/* -------------------------- */
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem; /* justér efter behov */
+	position: absolute; /* for placering ovenpå hero */
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+.navbar__logo {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.navbar__toggle {
+	display: none; /* skjul desktop */
+	background: none;
+	border: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.navbar__list {
+	display: flex;
+	gap: 1rem;
+	list-style: none;
 }
