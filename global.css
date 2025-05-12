@@ -161,24 +161,37 @@ hr.main__divider {
 /*       BILLEDE I MAIN       */
 /* -------------------------- */
 /* Her er det vigtigt at have en container til billedet, så det kan skaleres korrekt */
+
 .front {
 	position: relative;
-	z-index: 1; /* sikrer, at billedet ligger under teksten */
+	display: flex;
+	align-items: center;
+	justify-content: flex-start; /* Venstrejustér indhold */
+	height: 100vh; /* Fyld hele skærmhøjden */
+	overflow: hidden;
 }
 
 .front__image {
+	position: absolute;
 	width: 100%;
-	display: block;
+	height: 100%;
+	object-fit: cover;
+	top: 0;
+	left: 0;
+	z-index: -1; /* Billedet bag teksten */
 }
 
 .front__content {
-	position: absolute;
-	bottom: 1.5rem;
-	left: 1rem;
-	right: 1rem;
-	text-align: center;
-	padding: 1rem;
-	border-radius: 12px;
+	text-align: left;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	max-width: 600px;
+}
+
+.front__name,
+.front__description {
+	margin-left: 0;
+	margin-right: 0;
 }
 
 /* -------------------------- */
