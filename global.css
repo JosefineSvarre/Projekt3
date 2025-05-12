@@ -152,6 +152,11 @@ hr.main__divider {
 	gap: 0.5rem;
 }
 
+.navbar__list a.active {
+	color: var(--color-link-hover);
+	font-weight: 600;
+}
+
 /* -------------------------- */
 /*       BILLEDE I MAIN       */
 /* -------------------------- */
@@ -193,6 +198,7 @@ hr.main__divider {
 /*      RESPONSIVE DESKTOP    */
 /* -------------------------- */
 /* --------TYPOGRAFI--------- */
+
 @media (min-width: 768px) {
 	h1 {
 		font-size: 76px;
@@ -215,6 +221,7 @@ hr.main__divider {
 }
 
 /* -----NAVIGATION--------- */
+
 @media (min-width: 768px) {
 	.navbar__toggle {
 		display: none;
