@@ -212,3 +212,56 @@ hr.main__divider {
 .footer__text a:hover {
 	color: var(--color-link-hover);
 }
+
+/* -------------------------- */
+/*   LEGER MED BILLEDE  */
+/* -------------------------- */
+
+.main {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden; /* Skjuler overflow for at undgå scrollbars */
+}
+
+/* Front sektionen */
+.front {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.front__image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Gør billedet responsivt og dækker hele området */
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1; /* Sørger for at billedet er i baggrunden */
+}
+
+.front__content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(
+		-50%,
+		-50%
+	); /* Centrerer indholdet vertikalt og horisontalt */
+	text-align: center;
+	color: white; /* Hvid tekst for bedre kontrast */
+	padding: 20px;
+	z-index: 1;
+}
+
+.front__name {
+	font-size: 3rem; /* Større skrifttype til navnet */
+	font-family: "Playfair Display", serif;
+	margin: 0;
+}
+
+.front__description {
+	font-size: 1.5rem; /* Størrelse på beskrivelsen */
+	margin-top: 10px;
+	font-weight: 400;
+}
