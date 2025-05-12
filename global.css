@@ -156,16 +156,15 @@ hr.main__divider {
 }
 
 .navbar__list a.active {
-	/* aktivt link */
+	/* aktivt link på undersiderne*/
 	color: var(--color-link-hover);
 	font-weight: 600;
-	display: block; /* sikrer, at det er en blok som JAVA kan åbne. Forstår ik' endnu */
+	display: block; /* sikrer, at det er en blok som JAVA kan åbne */
 }
 
 /* -------------------------- */
-/*       BILLEDE I MAIN       */
+/*     MAIN I INDEX-HTML      */
 /* -------------------------- */
-/* Her er det vigtigt at have en container til billedet, så det kan skaleres korrekt */
 
 .front {
 	position: relative;
@@ -255,7 +254,7 @@ hr.main__divider {
 		padding: 0;
 	}
 }
-/* -----BILLEDE I MAIN--------- */
+/* -----BILLEDER I MAIN--------- */
 @media (min-width: 768px) {
 	.front__content {
 		padding-left: 5rem;
