@@ -151,13 +151,15 @@ hr.main__divider {
 	top: 100%;
 	right: 1rem;
 	padding: 1rem;
-	list-style: none;
+	list-style: none; /* fjerner punkttegn */
 	gap: 0.5rem;
 }
 
 .navbar__list a.active {
+	/* aktivt link */
 	color: var(--color-link-hover);
 	font-weight: 600;
+	display: block; /* sikrer, at det er en blok som JAVA kan åbne. Forstår ik' endnu */
 }
 
 /* -------------------------- */
