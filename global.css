@@ -250,3 +250,9 @@ hr.main__divider {
 		padding: 0;
 	}
 }
+/* -----BILLEDE I MAIN--------- */
+@media (min-width: 768px) {
+	.front__content {
+		padding-left: 5rem;
+	}
+}
