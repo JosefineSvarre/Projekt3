@@ -207,8 +207,38 @@ hr.main__divider {
 /* -------------------------- */
 
 .footer {
+	margin: 2rem;
 	padding: 2rem;
-	background-color: #1a1a1a1a;
+	background-color: #1a1a1a;
+	border: 2px solid var(--color-text);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.footer__contact,
+.footer__nav,
+.footer__copyright {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer__heading,
+.footer__text {
+	margin: 0.5rem 0;
+}
+
+.footer_divider {
+	width: 90%;
+	height: 2px;
+	background-color: var(--color-text);
+	margin: 1.5rem 0;
+}
+
+.footer__text a {
+	text-decoration: none;
+	color: var(--color-text);
 }
 
 .footer__text a:hover {
@@ -262,5 +292,56 @@ a {
 @media (min-width: 768px) {
 	.front__content {
 		padding-left: 5rem;
+	}
+}
+
+/* -----FOOTER--------- */
+@media (min-width: 768px) {
+	.footer {
+		flex-direction: column;
+		position: relative;
+		border: 2px solid var(--color-text);
+	}
+
+	.footer__content {
+		display: flex;
+		justify-content: space-around;
+		align-items: flex-start;
+		width: 100%;
+		padding-bottom: 2rem;
+		position: relative;
+	}
+
+	.footer__contact,
+	.footer__nav {
+		width: 40%;
+		text-align: left;
+	}
+
+	.footer__contact {
+		padding-right: 2rem;
+	}
+
+	.footer__nav {
+		padding-left: 2rem;
+	}
+
+	.footer__divider--vertical {
+		width: 2px;
+		height: auto;
+		background-color: var(--color-text);
+		align-self: stretch;
+	}
+
+	.footer__divider {
+		width: 90%;
+		height: 2px;
+		background-color: var(--color-text);
+		margin: 2rem 0; /* Ændret margin for at give mere plads */
+
+		.footer__copyright {
+			text-align: center;
+			margin: 1rem 0;
+		}
 	}
 }
