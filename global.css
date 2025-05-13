@@ -29,22 +29,22 @@ body {
 h1 {
 	font-family: var(--font-primary);
 	font-weight: 800;
-	font-size: 40px;
+	font-size: 2.5rem; /* 40px */
 	letter-spacing: 0.05em;
 }
 
 h2 {
 	font-family: var(--font-primary);
 	font-weight: 400;
-	font-size: 24px;
+	font-size: 1.5rem; /* 24px */
 	letter-spacing: 0.1em;
-	line-height: 28px;
+	line-height: 1.4; /* 28px */
 }
 
 h3 {
 	font-family: var(--font-primary);
 	font-weight: 800;
-	font-size: 30px;
+	font-size: 1.875rem; /* 30px */
 	letter-spacing: 0.05em;
 	color: var(--color-heading-h3);
 }
@@ -52,19 +52,18 @@ h3 {
 h4 {
 	font-family: var(--font-secondary);
 	font-style: italic;
-	font-size: 16px;
+	font-size: 1rem; /* 16px */
 	letter-spacing: 0.05em;
-	line-height: 40px;
+	line-height: 1.5; /* 24px */ /* SKAL EVT. RETTES!! */
 }
 
 p,
 a {
-	/* standardfont for både p & links (a)*/
 	font-family: var(--font-secondary);
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 1rem; /* 16px */
 	letter-spacing: 0.1em;
-	line-height: 28px;
+	line-height: 1.6; /* 24px */
 	color: var(--color-text);
 	text-decoration: none;
 }
@@ -137,7 +136,7 @@ hr.main__divider {
 	/* aktivt link på undersiderne*/
 	color: var(--color-link-hover);
 	font-weight: 600;
-	display: block; /* sikrer, at det er en blok som JAVA kan åbne */
+	display: block; /* gør det til blok for at fylde hele bredden */
 }
 
 /* -------------------------- */
@@ -154,6 +153,7 @@ hr.main__divider {
 	align-items: center;
 	text-align: center;
 }
+
 .footer__contact,
 .footer__nav,
 .footer__copyright {
@@ -191,23 +191,23 @@ hr.main__divider {
 
 @media (min-width: 768px) {
 	h1 {
-		font-size: 76px;
+		font-size: 4.75rem; /* 76px */
 	}
 
 	h2 {
-		font-size: 30px;
-		line-height: 45px;
+		font-size: 1.875rem; /* 30px */
+		line-height: 1.5;
 	}
 
 	h4 {
-		font-size: 20px;
-		line-height: 42px;
+		font-size: 1.25rem; /* 20px */
+		line-height: 1.6;
 	}
 }
 
 p,
 a {
-	font-size: 18px;
+	font-size: 1.125rem; /* 18px */
 }
 
 /* -----NAVIGATION--------- */
@@ -218,7 +218,7 @@ a {
 	}
 
 	.navbar__list {
-		display: flex !important;
+		display: flex !important; /* vises på tablet og desktop */
 		position: static;
 		flex-direction: row;
 		gap: 2rem;
