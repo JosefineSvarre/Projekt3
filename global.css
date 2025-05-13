@@ -83,35 +83,6 @@ hr.main__divider {
 }
 
 /* -------------------------- */
-/*       SPACING & LINKS      */
-/* -------------------------- */
-
-/* Grundlæggende marginer for billeder */
-img {
-	padding-left: 5%; /* Afstand fra venstre kant for at aligne med hr */
-	padding-right: 5%; /* Afstand fra højre kant for at aligne med hr */
-}
-
-/* Generel margin og padding for overskrifter og tekst */
-h1,
-h2,
-h3,
-h4,
-p {
-	margin: 1rem;
-	padding-left: 5%; /* 5% padding til venstre */
-	padding-right: 5%; /* 5% padding til højre */
-}
-
-/* Ekstra spacing og vægt til knap-lignende links */
-.about__link,
-.projects__link {
-	font-weight: 600;
-	display: inline-block;
-	margin-top: 1rem;
-}
-
-/* -------------------------- */
 /*        NAVIGATION          */
 /* -------------------------- */
 
@@ -214,7 +185,7 @@ p {
 }
 
 /* -------------------------- */
-/*   MEDIA QUERIES DESKTOP    */
+/*   MEDIA QUERIES TABLET    */
 /* -------------------------- */
 /* --------TYPOGRAFI--------- */
 

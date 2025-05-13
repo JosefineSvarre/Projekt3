@@ -23,27 +23,24 @@
 	z-index: -1; /* Billedet bag teksten */
 }
 
-.front__content {
+.front__name,
+.front__description {
 	text-align: left;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 	max-width: 600px;
-}
-
-.front__name,
-.front__description {
 	margin-left: 0;
 	margin-right: 0;
 }
 
-/* -----FRONT ABOUT-------- */
+/* -----ABOUT & PROJEKTER SEKTION-------- */
 
 .about__image {
 	display: none; /* skjules på mobil */
 }
 
 /* -------------------------- */
-/*   MEDIA QUERIES DESKTOP    */
+/*   MEDIA QUERIES TABLET    */
 /* -------------------------- */
 /* -----FRONT SEKTION-------- */
 
@@ -53,12 +50,18 @@
 	}
 }
 
-/* -----FRONT ABOUT-------- */
+/*--ABOUT & PROJEKTER SEKTION--*/
 @media (min-width: 768px) {
 	.about__image {
 		display: block;
-		max-width: 500px;
-		width: 100%; /* Billedet fylder 100% af containeren */
+		max-width: 410px;
+		width: 100%;
+		height: auto;
+	}
+
+	.projects__image {
+		max-width: 410px;
+		width: 100%;
 		height: auto;
 	}
 
@@ -66,5 +69,17 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr; /* To kolonner */
 		gap: 2rem; /* Mellemrum mellem kolonnerne */
+		margin: 1rem;
+		padding-left: 5%; /* 5% padding til venstre */
+		padding-right: 5%; /* 5% padding til højre */
+	}
+
+	.projects {
+		display: grid;
+		grid-template-columns: 1fr 1fr; /* To kolonner */
+		gap: 2rem; /* Mellemrum mellem kolonnerne */
+		margin: 1rem;
+		padding-left: 5%; /* 5% padding til venstre */
+		padding-right: 5%; /* 5% padding til højre */
 	}
 }
