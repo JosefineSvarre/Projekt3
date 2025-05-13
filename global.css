@@ -76,7 +76,7 @@ a:hover {
 
 hr.main__divider {
 	border: none; /* Fjerner standardkant */
-	height: 2px;
+	height: 1px;
 	width: 90%; /* Standard bredde til mobil, 90% */
 	background-color: var(--color-hr);
 	margin: 2rem auto; /* Linjen bliver i centrum */
@@ -298,7 +298,7 @@ a {
 	.footer {
 		flex-direction: column;
 		position: relative;
-		border: 2px solid var(--color-text);
+		border: 1px solid var(--color-text);
 	}
 
 	.footer__content {
