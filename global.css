@@ -86,16 +86,21 @@ hr.main__divider {
 /*       SPACING & LINKS      */
 /* -------------------------- */
 
-/* Grundlæggende margener for overskrifter og tekstsektioner */
-.front__name,
-.front__description,
-.about__heading,
-.about__text,
-.projects__heading,
-.projects__text,
-.footer__heading,
-.footer__text {
+/* Grundlæggende marginer for billeder */
+img {
+	padding-left: 5%; /* Afstand fra venstre kant for at aligne med hr */
+	padding-right: 5%; /* Afstand fra højre kant for at aligne med hr */
+}
+
+/* Generel margin og padding for overskrifter og tekst */
+h1,
+h2,
+h3,
+h4,
+p {
 	margin: 1rem;
+	padding-left: 5%; /* 5% padding til venstre */
+	padding-right: 5%; /* 5% padding til højre */
 }
 
 /* Ekstra spacing og vægt til knap-lignende links */
@@ -117,8 +122,8 @@ hr.main__divider {
 	padding: 1rem;
 	position: absolute; /* ændret fra fixed og relative til absolute */
 	top: 0;
-	left: 0;
-	right: 0;
+	left: 5%;
+	right: 5%;
 	z-index: 1000; /* sikre, at navbaren ligger øverst */
 }
 

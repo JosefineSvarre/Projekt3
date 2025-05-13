@@ -38,6 +38,10 @@
 
 /* -----FRONT ABOUT-------- */
 
+.about__image {
+	display: none; /* skjules på mobil */
+}
+
 /* -------------------------- */
 /*   MEDIA QUERIES DESKTOP    */
 /* -------------------------- */
@@ -46,5 +50,21 @@
 @media (min-width: 768px) {
 	.front__content {
 		padding-left: 5rem;
+	}
+}
+
+/* -----FRONT ABOUT-------- */
+@media (min-width: 768px) {
+	.about__image {
+		display: block;
+		max-width: 500px;
+		width: 100%; /* Billedet fylder 100% af containeren */
+		height: auto;
+	}
+
+	.about {
+		display: grid;
+		grid-template-columns: 1fr 1fr; /* To kolonner */
+		gap: 2rem; /* Mellemrum mellem kolonnerne */
 	}
 }
