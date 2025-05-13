@@ -5,7 +5,7 @@
 /* ------FRONT SEKTION--------- */
 
 .front {
-	position: relative;
+	position: relative; /* For at placere billedet bag teksten */
 	display: flex;
 	align-items: center;
 	justify-content: flex-start; /* Venstrejustér indhold */
@@ -45,6 +45,12 @@
 	font-weight: 600;
 	display: inline-block;
 	margin-top: 1rem;
+}
+
+.about,
+.projects {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
 }
 
 /* -------------------------- */
