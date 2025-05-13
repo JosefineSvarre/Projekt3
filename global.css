@@ -165,42 +165,6 @@ hr.main__divider {
 }
 
 /* -------------------------- */
-/*          LAYOUT            */
-/* -------------------------- */
-
-.front {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start; /* Venstrejustér indhold */
-	height: 100vh; /* Fyld hele skærmhøjden */
-	overflow: hidden;
-}
-
-.front__image {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	top: 0;
-	left: 0;
-	z-index: -1; /* Billedet bag teksten */
-}
-
-.front__content {
-	text-align: left;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
-	max-width: 600px;
-}
-
-.front__name,
-.front__description {
-	margin-left: 0;
-	margin-right: 0;
-}
-
-/* -------------------------- */
 /*           FOOTER           */
 /* -------------------------- */
 
@@ -227,6 +191,7 @@ hr.main__divider {
 	margin: 0.5rem 0;
 }
 
+/* HVORFOR KOMMER DEN IKKE */
 .footer_divider {
 	width: 90%;
 	height: 2px;
@@ -286,13 +251,6 @@ a {
 		padding: 0;
 	}
 }
-/* -----BILLEDER I MAIN--------- */
-@media (min-width: 768px) {
-	.front__content {
-		padding-left: 5rem;
-	}
-}
-
 /* -----FOOTER--------- */
 @media (min-width: 768px) {
 	.footer {
