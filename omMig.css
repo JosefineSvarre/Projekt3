@@ -7,3 +7,85 @@
 /* ------PROGRAMMER--------- */
 
 /* ------ANBEFALING--------- */
+
+.omMig {
+	padding: 2rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.omMig__layout {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+/* Venstre tekst */
+.omMig__text {
+	flex: 1 1 60ch;
+}
+
+.omMig__textdel {
+	margin-bottom: 1rem;
+	line-height: 1.6;
+}
+
+.omMig__callAction {
+	margin-top: 2rem;
+}
+
+/* Højre side med billede og værktøjer */
+.omMig__billedeSide {
+	flex: 1 1 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.omMig__billede {
+	max-width: 100%;
+	border-radius: 12px;
+	margin-bottom: 1rem;
+}
+
+/* Værktøjsikoner */
+.programmer__icons {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	justify-items: center;
+	margin-top: 1rem;
+}
+
+.programmer__icons img {
+	width: 60px;
+	height: auto;
+}
+
+/* Divider */
+.main__divider {
+	margin: 3rem auto;
+	border: none;
+	border-top: 2px solid #ccc;
+	width: 80%;
+}
+
+/* Responsiv tilpasning */
+@media screen and (max-width: 768px) {
+	.omMig__layout {
+		flex-direction: column-reverse;
+	}
+
+	.omMig__billedeSide {
+		order: -1;
+	}
+
+	.programmer__icons {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.omMig__text {
+		text-align: left;
+	}
+}
