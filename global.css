@@ -19,11 +19,9 @@ body {
 	color: var(--color-text); /* standard farve til tekst */
 	font-family: var(--font-secondary); /* standard font for body*/
 }
-
 * {
 	border: 1px dotted greenyellow;
 }
-
 /* ---------------------------------------- */
 /*               TYPOGRAFI                  */
 /* ---------------------------------------- */
@@ -327,21 +325,23 @@ a {
 	}
 
 	.footer__divider--vertical {
-		width: 2px;
+		width: 1px;
 		height: auto;
 		background-color: var(--color-text);
 		align-self: stretch;
 	}
 
 	.footer__divider {
-		width: 90%;
-		height: 2px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 7rem; /*justér margin yderligere */
+		height: 1px;
 		background-color: var(--color-text);
-		margin: 2rem 0; /* Ændret margin for at give mere plads */
+	}
 
-		.footer__copyright {
-			text-align: center;
-			margin: 1rem 0;
-		}
+	.footer__copyright {
+		text-align: center;
+		margin: 1rem 0;
 	}
 }
