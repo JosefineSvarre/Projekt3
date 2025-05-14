@@ -29,8 +29,7 @@
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 	max-width: 600px;
-	margin-left: 0;
-	margin-right: 0;
+	margin: inherit; /* Arv margin fra forælder */
 }
 
 /* ---- ABOUT & PROJEKTER SEKTION ---- */
@@ -83,37 +82,26 @@ hr.main__divider {
 		padding-left: 5rem;
 	}
 
-	/*--- ABOUT & PROJEKTER SEKTIO ---*/
-	/* Billeder */
-	.about__image {
-		display: block;
-		max-width: 410px;
-		width: 100%;
-		height: auto;
-		transform: scaleX(-1);
-		grid-column: 1;
-		grid-row: 1;
-	}
-
-	.projects__image {
-		max-width: 410px;
-		width: 100%;
-		height: auto;
-	}
-
-	/* Layout: ABOUT */
+	/* --------- ABOUT ------------ */
 	.about {
 		display: grid;
 		grid-template-columns: 1fr 1fr; /* To kolonner */
 		grid-template-rows: auto auto; /* To rækker */
-		gap: 2rem;
-		margin: 1rem;
-		padding-left: 5%;
-		padding-right: 5%;
+		gap: 2rem; /* Mellemrum mellem kolonnerne */
 	}
 
 	.about__content {
 		grid-column: 2;
+		grid-row: 1;
+	}
+
+	.about__image {
+		display: block;
+		max-width: 610px;
+		width: 100%;
+		height: auto;
+		transform: scaleX(-1);
+		grid-column: 1;
 		grid-row: 1;
 	}
 
@@ -123,19 +111,23 @@ hr.main__divider {
 		display: block;
 		border: none;
 		height: 1px;
-		width: 90%;
+		width: 100%;
 		background-color: var(--color-hr);
 		margin: 2rem auto;
 	}
 
-	/* Layout: PROJEKTER */
+	/* ------- PROJEKTER ---------- */
 	.projects {
 		display: grid;
 		grid-template-columns: 1fr 1fr; /* To kolonner */
-		gap: 2rem; /* Mellemrum mellem kolonnerne */
+		gap: 2rem;
 		margin: 1rem;
-		padding-left: 5%; /* 5% padding til venstre */
-		padding-right: 5%; /* 5% padding til højre */
+	}
+
+	.projects__image {
+		max-width: 610px;
+		width: 100%;
+		height: auto;
 	}
 
 	/* Divider-oprydning */

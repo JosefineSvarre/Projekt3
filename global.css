@@ -53,6 +53,7 @@ h3 {
 	font-size: 1.875rem; /* 30px */
 	letter-spacing: 0.05em;
 	color: var(--color-heading-h3);
+	margin: auto;
 }
 
 h4 {
