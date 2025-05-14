@@ -5,21 +5,21 @@
 
 /* ---------- FRONT SEKTION ---------- */
 .front {
-	position: relative; /* For at placere billedet bag teksten */
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start; /* Venstrejustér indhold */
 	height: 100vh; /* Fyld hele skærmhøjden */
-	overflow: hidden;
+	overflow: hidden; /* har umiddelbart ingen virkning*/
 }
 
 .front__image {
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 0; /*placering øverst i venstre hjørne*/
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	object-fit: cover; /*billedet fylder hele des boks*/
 	object-position: 50% 10%;
 	z-index: -1; /* Billedet bag teksten */
 }
