@@ -46,7 +46,7 @@
 	width: 100%;
 	max-width: 410px;
 	height: auto;
-	transform: scaleX(-1);
+	transform: scaleX(-1); /* Spejlvend billedet */
 }
 
 .about__link,
