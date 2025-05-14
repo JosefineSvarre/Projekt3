@@ -22,16 +22,13 @@ main {
 	font-style: italic;
 	letter-spacing: 10%;
 }
-.omMig__billedKasse {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 2rem; /* lidt luft under billedet */
-}
 
 .omMig__billede {
 	display: block;
+	margin: 0 auto 2rem auto; /* centreret på mobil */
 	max-width: 100%;
-	border-radius: 40px; /* Afrundede kanter som mockup*/
+	height: auto;
+	border-radius: 40px; /* Afrundede kanter som mockup */
 }
 
 /* ------PROGRAMMER--------- */
@@ -59,8 +56,26 @@ main {
 	}
 
 	/* ---------OM MIG SEKTION------------ */
-	.omMig__subtitle {
-		width: 50%;
+
+	.omMig__title {
+		margin-top: 4.2rem;
+	}
+
+	.omMig__topSektion {
+		display: flex;
+		align-items: flex-start;
+		gap: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.omMig__intro {
+		flex: 1;
+	}
+
+	.omMig__billede {
+		flex: 1;
+		align-self: flex-start;
+		margin-top: 6.2rem;
 	}
 }
 
