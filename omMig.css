@@ -30,20 +30,36 @@ main {
 }
 
 /* ------PROGRAMMER--------- */
+.omMig__værktejskasse {
+	margin-top: 1rem;
+	margin-bottom: 3rem;
+	border-top: 1px solid var(--color-hr);
+	border-left: 1px solid var(--color-hr);
+	padding: 1rem;
+}
+
 .programmer__icons {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 1rem;
-	justify-items: center;
+	justify-items: left;
 	margin-top: 1rem;
 }
 
 .programmer__icons img {
-	width: 60px;
+	width: 100px;
 	height: auto;
 }
 
+hr.main__divider {
+	display: none;
+}
+
 /* ------ANBEFALING--------- */
+.anbefaling__name {
+	display: block;
+	margin-top: 0rem;
+}
 
 /* ------------------------------------------ */
 /*            MEDIA QUERIES: TABLET           */
@@ -68,7 +84,7 @@ main {
 
 	.omMig__venstre,
 	.omMig__højre {
-		flex: 1;
+		flex: 1; /* hver side får lige meget pladds*/
 	}
 
 	.omMig__billede {
@@ -79,12 +95,44 @@ main {
 		margin-top: 6.2rem; /* Juster hvis nødvendigt */
 	}
 
-	/* ------PROGRAMMER--------- */
-	.omMig__værktøjskasse {
+	.omMig__værktejskasse {
 		margin-top: 2rem;
+	}
+
+	hr.main__divider {
+		display: block;
+		border: none;
+		height: 1px;
+		width: 100%;
+		background-color: var(--color-hr);
+		margin: 2rem auto;
 	}
 }
 
 /* ------------------------------------------ */
 /*           MEDIA QUERIES: DESKTOP           */
 /* ------------------------------------------ */
+@media (min-width: 992px) {
+	.omMig__billede {
+		margin-left: 3.2rem;
+	}
+
+	.omMig__værktejskasse {
+		margin-left: 3.2rem;
+	}
+
+	.programmer__icons img {
+		width: 125px;
+		height: auto;
+	}
+}
+
+@media (min-width: 1311px) {
+	.omMig__billede {
+		margin-left: 6.2rem;
+	}
+
+	.omMig__værktejskasse {
+		margin-left: 6.2rem;
+	}
+}
