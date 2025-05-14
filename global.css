@@ -23,6 +23,7 @@ body {
 	color: var(--color-text); /* standard farve til tekst */
 	font-family: var(--font-secondary); /* standard font for body*/
 }
+
 * {
 	border: 1px dotted greenyellow;
 }
@@ -88,12 +89,12 @@ a:hover {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem;
+	padding: 1rem 1.4rem;
 	position: absolute;
 	top: 0;
-	left: 5%;
-	right: 5%;
-	z-index: 1000; /* sikre, at navbaren ligger øverst */
+	left: 0;
+	right: 0;
+	z-index: 1000;
 }
 
 .navbar__logo {
@@ -228,11 +229,16 @@ a:hover {
 		border: 1px solid var(--color-text);
 	}
 
+	.footer__contact {
+		padding-left: 0rem;
+	}
+
 	.footer__content {
 		display: flex;
 		justify-content: space-around;
 		width: 100%;
 		padding-bottom: 2rem;
+		padding-left: 1.4rem;
 		position: relative;
 	}
 

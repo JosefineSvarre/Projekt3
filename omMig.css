@@ -1,52 +1,33 @@
-/* --------------------------- */
-/*   OM MIG   - MOBILE FIRST   */
-/* --------------------------- */
+/* ------------------------------------------ */
+/*                  OM MIG                    */
+/*             Mobile First Design            */
+/* ------------------------------------------ */
 
-/* ------OM MIG SEKTION--------- */
+main {
+	padding: 0 1.4rem;
+}
+
+/* ---------OM MIG SEKTION------------ */
 
 /* ------PROGRAMMER--------- */
 
 /* ------ANBEFALING--------- */
 
-.omMig {
-	padding: 2rem;
-	max-width: 1200px;
-	margin: 0 auto;
+.omMig__title {
+	font-size: 80px; /* KIG PÅ DETTE SENERE */
+	text-align: left;
+	margin-bottom: 0rem;
 }
 
-.omMig__layout {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 2rem;
-}
-
-/* Venstre tekst */
-.omMig__text {
-	flex: 1 1 60ch;
-}
-
-.omMig__textdel {
-	margin-bottom: 1rem;
-	line-height: 1.6;
-}
-
-.omMig__callAction {
-	margin-top: 2rem;
-}
-
-/* Højre side med billede og værktøjer */
-.omMig__billedeSide {
-	flex: 1 1 300px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
+.omMig__subtitle {
+	margin-bottom: 0rem;
 }
 
 .omMig__billede {
+	display: block;
 	max-width: 100%;
-	border-radius: 12px;
-	margin-bottom: 1rem;
+	border-radius: 40px; /* Afrundede kanter som mockup*/
+	margin-top: 1rem;
 }
 
 /* Værktøjsikoner */
@@ -71,21 +52,23 @@
 	width: 80%;
 }
 
-/* Responsiv tilpasning */
-@media screen and (max-width: 768px) {
-	.omMig__layout {
-		flex-direction: column-reverse;
+/* ------------------------------------------ */
+/*            MEDIA QUERIES: TABLET           */
+/* ------------------------------------------ */
+@media (min-width: 769px) {
+	/* ---------- BASALE STYLES ---------- */
+	main {
+		padding-left: 3rem;
 	}
+}
 
-	.omMig__billedeSide {
-		order: -1;
-	}
-
-	.programmer__icons {
-		grid-template-columns: repeat(3, 1fr);
-	}
-
-	.omMig__text {
-		text-align: left;
+/* ------------------------------------------ */
+/*           MEDIA QUERIES: DESKTOP           */
+/* ------------------------------------------ */
+@media (min-width: 992px) {
+	/* ---------- BASALE STYLES ---------- */
+	main {
+		padding-left: 4rem;
+		padding-right: 4rem;
 	}
 }
