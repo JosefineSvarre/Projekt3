@@ -1,7 +1,7 @@
 // ----------------------------//
 //  Script til burger menuen   //
 // ---------------------------//
-// Jeg har fået hjælp til at lave denne kode af Jacob fra 2. semester!
+// Jeg har fået hjælp til at lave denne kode af Jacob fra 2. semester og derfor afspejler denne del ikke mine kompetencer inden for kodning!//
 // Koden er lavet til at fungere med HTML og CSS, som jeg selv har lavet.
 
 document.addEventListener("DOMContentLoaded", function () {

@@ -15,11 +15,11 @@
 
 .front__image {
 	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	top: 0;
-	left: 0;
 	z-index: -1; /* Billedet bag teksten */
 }
 
@@ -63,25 +63,37 @@
 	margin-bottom: 1rem;
 }
 
+hr.about__divider {
+	border: none;
+	height: 1px;
+	width: 100%;
+	background-color: var(--color-hr);
+	margin: 2rem auto; /* writespace*/
+}
+
+hr.main__divider {
+	display: none;
+}
+
 /* -------------------------- */
 /*   MEDIA QUERIES TABLET    */
 /* -------------------------- */
-/* -----FRONT SEKTION-------- */
-
 @media (min-width: 768px) {
+	/* -----FRONT SEKTION-------- */
 	.front__content {
 		padding-left: 5rem;
 	}
-}
 
-/*--ABOUT & PROJEKTER SEKTION--*/
-@media (min-width: 768px) {
+	/*--ABOUT & PROJEKTER SEKTION--*/
+	/* Billeder */
 	.about__image {
 		display: block;
 		max-width: 410px;
 		width: 100%;
 		height: auto;
 		transform: scaleX(-1);
+		grid-column: 1;
+		grid-row: 1;
 	}
 
 	.projects__image {
@@ -90,7 +102,34 @@
 		height: auto;
 	}
 
-	.about,
+	/* Layout: ABOUT */
+	.about {
+		display: grid;
+		grid-template-columns: 1fr 1fr; /* To kolonner */
+		grid-template-rows: auto auto; /* To rækker */
+		gap: 2rem;
+		margin: 1rem;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.about__content {
+		grid-column: 2;
+		grid-row: 1;
+	}
+
+	hr.main__divider {
+		grid-column: 1 / -1; /* strækker sig over begge kolonner */
+		grid-row: 2;
+		display: block;
+		border: none;
+		height: 1px;
+		width: 90%;
+		background-color: var(--color-hr);
+		margin: 2rem auto;
+	}
+
+	/* Layout: PROJEKTER */
 	.projects {
 		display: grid;
 		grid-template-columns: 1fr 1fr; /* To kolonner */
@@ -98,5 +137,10 @@
 		margin: 1rem;
 		padding-left: 5%; /* 5% padding til venstre */
 		padding-right: 5%; /* 5% padding til højre */
+	}
+
+	/* Divider-oprydning */
+	hr.about__divider {
+		display: none;
 	}
 }

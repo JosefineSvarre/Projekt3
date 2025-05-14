@@ -1,6 +1,9 @@
-/* --------------------------- */
-/* GLOBAL STYLE - MOBILE FIRST */
-/* --------------------------- */
+/* ------------------------------------------ */
+/*             GLOBAL STYLE                   */
+/*             Mobile First Design            */
+/* ------------------------------------------ */
+
+/* ---------- ROOT VARIABLES ---------- */
 :root {
 	--color-background: #222222;
 	--color-text: #f2f2f2;
@@ -12,6 +15,7 @@
 	--font-secondary: "Lato", sans-serif;
 }
 
+/* ---------- BASALE STYLES ---------- */
 body {
 	margin: 0;
 	padding: 0;
@@ -22,10 +26,12 @@ body {
 * {
 	border: 1px dotted greenyellow;
 }
+
 /* ---------------------------------------- */
 /*               TYPOGRAFI                  */
 /* ---------------------------------------- */
 /* Her overskriver jeg min standardsettings */
+
 h1 {
 	font-family: var(--font-primary);
 	font-weight: 800;
@@ -73,17 +79,9 @@ a:hover {
 	font-weight: 600;
 }
 
-hr.main__divider {
-	border: none;
-	height: 1px;
-	width: 90%; /* Standard bredde til mobil, 90% */
-	background-color: var(--color-hr);
-	margin: 2rem auto; /* Linjen bliver i centrum */
-}
-
-/* -------------------------- */
-/*        NAVIGATION          */
-/* -------------------------- */
+/* ------------------------------------------ */
+/*               NAVIGATION                   */
+/* ------------------------------------------ */
 
 .navbar {
 	display: flex;
@@ -134,14 +132,13 @@ hr.main__divider {
 
 .navbar__list a.active {
 	/* aktivt link på undersiderne*/
-	display: block;
 	color: var(--color-link-hover);
 	font-weight: 600;
 }
 
-/* -------------------------- */
-/*           FOOTER           */
-/* -------------------------- */
+/* ------------------------------------------ */
+/*                  FOOTER                    */
+/* ------------------------------------------ */
 
 .footer {
 	margin: 0rem;
@@ -184,12 +181,12 @@ hr.main__divider {
 	color: var(--color-link-hover);
 }
 
-/* -------------------------- */
-/*   MEDIA QUERIES TABLET    */
-/* -------------------------- */
-/* --------TYPOGRAFI--------- */
+/* ------------------------------------------ */
+/*            MEDIA QUERIES: TABLET           */
+/* ------------------------------------------ */
 
 @media (min-width: 768px) {
+	/* -------- TYPOGRAFI -------- */
 	h1 {
 		font-size: 4.75rem; /* 76px */
 	}
@@ -203,16 +200,13 @@ hr.main__divider {
 		font-size: 1.25rem; /* 20px */
 		line-height: 1.6;
 	}
-}
 
-p,
-a {
-	font-size: 1.125rem; /* 18px */
-}
+	p,
+	a {
+		font-size: 1.125rem; /* 18px */
+	}
 
-/* -----NAVIGATION--------- */
-
-@media (min-width: 768px) {
+	/* -------- NAVIGATION -------- */
 	.navbar__toggle {
 		display: none;
 	}
@@ -226,9 +220,8 @@ a {
 		width: auto;
 		padding: 0;
 	}
-}
-/* -----FOOTER--------- */
-@media (min-width: 768px) {
+
+	/* -------- FOOTER -------- */
 	.footer {
 		flex-direction: column;
 		position: relative;
@@ -238,7 +231,6 @@ a {
 	.footer__content {
 		display: flex;
 		justify-content: space-around;
-		align-items: flex-start;
 		width: 100%;
 		padding-bottom: 2rem;
 		position: relative;
@@ -246,9 +238,11 @@ a {
 
 	.footer__contact,
 	.footer__nav {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
 		width: 40%;
-		text-align: left;
-		padding-right: 2rem; /* tilføjet for at give lidt plads HVIS DEN VILLE RYKKE TIL VENSTRE*/
+		padding-right: 2rem;
 	}
 
 	.footer__divider--vertical {
