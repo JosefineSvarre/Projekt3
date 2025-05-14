@@ -46,6 +46,7 @@
 	width: 100%;
 	max-width: 410px;
 	height: auto;
+	transform: scaleX(-1);
 }
 
 .about__link,
@@ -80,6 +81,7 @@
 		max-width: 410px;
 		width: 100%;
 		height: auto;
+		transform: scaleX(-1);
 	}
 
 	.projects__image {

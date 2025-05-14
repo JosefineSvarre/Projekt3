@@ -144,8 +144,8 @@ hr.main__divider {
 /* -------------------------- */
 
 .footer {
-	margin: 2rem;
-	padding: 2rem;
+	margin: 0rem;
+	padding: 0rem;
 	background-color: #1a1a1a;
 	border: 2px solid var(--color-text);
 	display: flex;
