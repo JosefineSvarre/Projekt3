@@ -25,9 +25,7 @@ main {
 
 .omMig__billede {
 	display: block;
-	margin: 0 auto 2rem auto; /* centreret på mobil */
-	max-width: 100%;
-	height: auto;
+	max-width: 60%;
 	border-radius: 40px; /* Afrundede kanter som mockup */
 }
 
@@ -68,23 +66,25 @@ main {
 		margin-bottom: 2rem;
 	}
 
-	.omMig__intro {
+	.omMig__venstre,
+	.omMig__højre {
 		flex: 1;
 	}
 
 	.omMig__billede {
-		flex: 1;
-		align-self: flex-start;
-		margin-top: 6.2rem;
+		display: block;
+		max-width: 100%;
+		height: auto;
+		border-radius: 40px;
+		margin-top: 6.2rem; /* Juster hvis nødvendigt */
+	}
+
+	/* ------PROGRAMMER--------- */
+	.omMig__værktøjskasse {
+		margin-top: 2rem;
 	}
 }
 
 /* ------------------------------------------ */
 /*           MEDIA QUERIES: DESKTOP           */
 /* ------------------------------------------ */
-@media (min-width: 992px) {
-	/* ---------OM MIG SEKTION------------ */
-	.omMig__subtitle {
-		width: 50%;
-	}
-}
