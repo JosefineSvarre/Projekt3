@@ -74,7 +74,7 @@ a:hover {
 }
 
 hr.main__divider {
-	border: none; /* Fjerner standardkant */
+	border: none;
 	height: 1px;
 	width: 90%; /* Standard bredde til mobil, 90% */
 	background-color: var(--color-hr);
@@ -90,7 +90,7 @@ hr.main__divider {
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem;
-	position: absolute; /* ændret fra fixed og relative til absolute */
+	position: absolute;
 	top: 0;
 	left: 5%;
 	right: 5%;
@@ -122,7 +122,7 @@ hr.main__divider {
 }
 
 .navbar__list {
-	display: none; /* skjules på mobil */
+	display: none;
 	flex-direction: column;
 	position: absolute;
 	top: 100%;
@@ -134,9 +134,9 @@ hr.main__divider {
 
 .navbar__list a.active {
 	/* aktivt link på undersiderne*/
+	display: block;
 	color: var(--color-link-hover);
 	font-weight: 600;
-	display: block; /* gør det til blok for at fylde hele bredden */
 }
 
 /* -------------------------- */
@@ -248,14 +248,7 @@ a {
 	.footer__nav {
 		width: 40%;
 		text-align: left;
-	}
-
-	.footer__contact {
-		padding-right: 2rem;
-	}
-
-	.footer__nav {
-		padding-left: 2rem;
+		padding-right: 2rem; /* tilføjet for at give lidt plads HVIS DEN VILLE RYKKE TIL VENSTRE*/
 	}
 
 	.footer__divider--vertical {
@@ -269,7 +262,7 @@ a {
 		position: absolute;
 		left: 0;
 		right: 0;
-		bottom: 7rem; /*justér margin yderligere */
+		bottom: 7rem;
 		height: 1px;
 		background-color: var(--color-text);
 	}
