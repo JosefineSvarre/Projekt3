@@ -9,28 +9,32 @@ main {
 
 /* ---------OM MIG SEKTION------------ */
 
-/* ------PROGRAMMER--------- */
-
-/* ------ANBEFALING--------- */
-
 .omMig__title {
 	font-size: 80px; /* KIG PÅ DETTE SENERE */
 	text-align: left;
 	margin-bottom: 0rem;
+	padding-top: 2rem;
 }
 
 .omMig__subtitle {
 	margin-bottom: 0rem;
+	padding-bottom: 2rem;
+	font-style: italic;
+	letter-spacing: 10%;
+}
+.omMig__billedKasse {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2rem; /* lidt luft under billedet */
 }
 
 .omMig__billede {
 	display: block;
 	max-width: 100%;
 	border-radius: 40px; /* Afrundede kanter som mockup*/
-	margin-top: 1rem;
 }
 
-/* Værktøjsikoner */
+/* ------PROGRAMMER--------- */
 .programmer__icons {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -44,20 +48,30 @@ main {
 	height: auto;
 }
 
-/* Divider */
-.main__divider {
-	margin: 3rem auto;
-	border: none;
-	border-top: 2px solid #ccc;
-	width: 80%;
-}
+/* ------ANBEFALING--------- */
 
 /* ------------------------------------------ */
 /*            MEDIA QUERIES: TABLET           */
 /* ------------------------------------------ */
-@media (min-width: 769px) {
-	/* ---------- BASALE STYLES ---------- */
+@media (min-width: 768px) {
 	main {
 		padding-left: 1rem;
+	}
+
+	/* ---------OM MIG SEKTION------------ */
+	.omMig__subtitle {
+		width: 50%;
+	}
+
+	.
+}
+
+/* ------------------------------------------ */
+/*           MEDIA QUERIES: DESKTOP           */
+/* ------------------------------------------ */
+@media (min-width: 992px) {
+	/* ---------OM MIG SEKTION------------ */
+	.omMig__subtitle {
+		width: 50%;
 	}
 }
