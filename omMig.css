@@ -58,17 +58,6 @@ main {
 @media (min-width: 769px) {
 	/* ---------- BASALE STYLES ---------- */
 	main {
-		padding-left: 3rem;
-	}
-}
-
-/* ------------------------------------------ */
-/*           MEDIA QUERIES: DESKTOP           */
-/* ------------------------------------------ */
-@media (min-width: 992px) {
-	/* ---------- BASALE STYLES ---------- */
-	main {
-		padding-left: 4rem;
-		padding-right: 4rem;
+		padding-left: 1rem;
 	}
 }
