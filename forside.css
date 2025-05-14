@@ -1,9 +1,9 @@
-/* --------------------------- */
-/* FORSIDE - MOBILE FIRST */
-/* --------------------------- */
+/* ------------------------------------------ */
+/*                  FORSIDE                   */
+/*             Mobile First Design            */
+/* ------------------------------------------ */
 
-/* ------FRONT SEKTION--------- */
-
+/* ---------- FRONT SEKTION ---------- */
 .front {
 	position: relative; /* For at placere billedet bag teksten */
 	display: flex;
@@ -33,8 +33,7 @@
 	margin-right: 0;
 }
 
-/* -----ABOUT & PROJEKTER SEKTION-------- */
-
+/* ---- ABOUT & PROJEKTER SEKTION ---- */
 .about__image {
 	display: none; /* skjules på mobil */
 }
@@ -75,16 +74,16 @@ hr.main__divider {
 	display: none;
 }
 
-/* -------------------------- */
-/*   MEDIA QUERIES TABLET    */
-/* -------------------------- */
+/* ------------------------------------------ */
+/*            MEDIA QUERIES: TABLET           */
+/* ------------------------------------------ */
 @media (min-width: 768px) {
-	/* -----FRONT SEKTION-------- */
+	/* ----- FRONT SEKTION -------- */
 	.front__content {
 		padding-left: 5rem;
 	}
 
-	/*--ABOUT & PROJEKTER SEKTION--*/
+	/*--- ABOUT & PROJEKTER SEKTIO ---*/
 	/* Billeder */
 	.about__image {
 		display: block;
