@@ -13,7 +13,7 @@
 	overflow: hidden; /* har umiddelbart ingen virkning*/
 }
 
-.front__image {
+.front__billede {
 	position: absolute;
 	top: 0;
 	left: 0; /*placering øverst i venstre hjørne*/
@@ -34,11 +34,11 @@
 }
 
 /* ---- ABOUT & PROJEKTER SEKTION ---- */
-.about__image {
+.about__billede {
 	display: none; /* skjules på mobil */
 }
 
-.projects__image {
+.projects__billede {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -108,7 +108,7 @@ hr.main__divider {
 		padding: 2rem;
 	}
 
-	.about__image {
+	.about__billede {
 		display: block;
 		max-width: 610px;
 		width: 100%;
@@ -137,7 +137,7 @@ hr.main__divider {
 		margin: inherit;
 	}
 
-	.projects__image {
+	.projects__billede {
 		max-width: 610px;
 		width: 100%;
 		height: auto;
