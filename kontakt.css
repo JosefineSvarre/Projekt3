@@ -137,7 +137,7 @@ Række 4
 		display: block; /*gør stregn synlig igen*/
 		border: none; /* Fjerner hr's standard-streg*/
 		width: 1px;
-		height: 50%;
+		height: 60%;
 		background-color: var(--color-hr);
 		position: absolute;
 		top: 50%;
