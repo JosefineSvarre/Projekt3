@@ -1,0 +1,33 @@
+/* ------------------------------------------ */
+/*                  KONTAKT                   */
+/*             Mobile First Design            */
+/* ------------------------------------------ */
+
+main {
+	padding: 0 1.4rem;
+}
+
+.kontakt {
+	margin-top: 6.2rem;
+}
+
+.kontakt__title {
+	margin: 1rem auto;
+}
+
+.kontakt__bredtekst {
+	margin-bottom: 6rem;
+}
+
+hr.main__divider {
+	display: block;
+	border: none; /* Fjerner hr's standard-streg*/
+	height: 1px;
+	width: 100%;
+	background-color: var(--color-hr);
+	margin-top: 4rem;
+}
+
+/* ------------------------------------------ */
+/*            MEDIA QUERIES: TABLET           */
+/* ------------------------------------------ */

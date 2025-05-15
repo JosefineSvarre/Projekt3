@@ -101,7 +101,7 @@ hr.main__divider {
 
 	hr.main__divider {
 		display: block;
-		border: none;
+		border: none; /* Fjerner hr's standard-streg*/
 		height: 1px;
 		width: 100%;
 		background-color: var(--color-hr);
