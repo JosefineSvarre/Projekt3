@@ -24,7 +24,7 @@ body {
 	font-family: var(--font-secondary); /* standard font for body*/
 }
 
-* {
+/* {
 	border: 1px dotted greenyellow;
 }
 
@@ -84,7 +84,6 @@ a:hover {
 /* ------------------------------------------ */
 /*               NAVIGATION                   */
 /* ------------------------------------------ */
-
 .navbar {
 	display: flex;
 	justify-content: space-between;
@@ -121,6 +120,12 @@ a:hover {
 	cursor: pointer;
 }
 
+.navbar__list a.active {
+	/* aktivt link på undersiderne*/
+	color: var(--color-link-hover);
+	font-weight: 600;
+}
+
 .navbar__list {
 	display: none;
 	flex-direction: column;
@@ -132,10 +137,15 @@ a:hover {
 	gap: 0.5rem;
 }
 
-.navbar__list a.active {
-	/* aktivt link på undersiderne*/
-	color: var(--color-link-hover);
-	font-weight: 600;
+@media (max-width: 768px) {
+	.navbar__list a {
+		display: block;
+		background-color: #222222;
+		padding: 0.5rem 1rem;
+		border: 1px solid #f2f2f2;
+		border-radius: 4px;
+		text-align: center;
+	}
 }
 
 /* ------------------------------------------ */
