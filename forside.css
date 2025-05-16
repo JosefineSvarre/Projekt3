@@ -47,13 +47,6 @@
 	height: auto;
 	transform: scaleX(-1); /* Spejlvend billedet */
 }
-
-.about__link,
-.projects__link {
-	font-weight: 600;
-	margin-top: 1rem;
-}
-
 .about,
 .projects {
 	padding-left: 1.5rem;
@@ -75,6 +68,57 @@ hr.about__divider {
 
 hr.main__divider {
 	display: none;
+}
+
+/* ---- CALL-TO-ACTION ---- */
+/* Første iteration
+.about__link, 
+.projects__link {
+	font-weight: 600;
+	margin-top: 1rem;
+}*/
+
+/* anden iteration*/
+.about__link,
+.projects__link {
+	position: relative; /* beholder sin plads i layout + anker for absolut*/
+	display: inline-block; /* Gør linket til en "blok" på linje*/
+	padding: 0.75rem 1.5rem;
+	font-weight: 600;
+	font-size: 1rem;
+	color: #f2f2f2;
+	overflow: hidden; /* Sørger for, at alt indhold (animationen ↓ )udenfor kanten bliver skjult*/
+	border: 1px solid #f2f2f2;
+	border-radius: 2rem; /* husk rep. ved alle knapper*/
+	transition: color 0.3s ease; /*Når farven ændrer sig, skal det ske over 0,3 sekunder med en glidende bevægelse*/
+}
+
+.projects__link {
+	margin-bottom: 1rem;
+}
+
+.about__link::before,
+.projects__link::before {
+	content: ""; /*Opretter et usynligt element før det synlige linkindhold. Det er dette, vi bruger som "baggrund"*/
+	position: absolute; /* flytter sig i relation til ↑ */
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #6e98c2;
+	transition: top 0.3s ease; /*Når vi ændrer top, sker det blødt over 0.3 sekunder.*/
+	z-index: -1; /* sørger for, at baggrundsanimationen er bag teksten */
+}
+
+/*Når du holder musen over knappen, glider baggrunden (::before-elementet ↑ ) op og dækker hele baggrunden.*/
+.about__link:hover::before,
+.projects__link:hover::before {
+	top: 0;
+}
+
+.about__link:hover,
+.projects__link:hover {
+	color: #f2f2f2;
 }
 
 /* ------------------------------------------ */
