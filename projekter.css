@@ -22,8 +22,11 @@ main {
 
 /* ---------------GRID---------------- */
 .projekter {
-	padding: 2rem;
-	max-width: 1200px;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	padding-left: 0rem;
+	padding-right: 0rem;
+	margin: 0 auto; /* top & bund = 0, V/H=automatisk */
 }
 
 /* Her laver jeg så mange kolonner som der er plads til – hver kolonne skal være mindst 280px bred, men må gerne vokse og fylde det ledige rum. */
@@ -37,7 +40,7 @@ main {
 .projekter__projekt {
 	display: flex;
 	flex-direction: column;
-	background: #f2f2f2;
+	background: none;
 	border-radius: 40px; /* Afrundede kanter som mockup */
 	overflow: hidden; /* Skjult men påvirker stadig layout */
 	padding: 1rem;
