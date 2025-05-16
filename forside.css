@@ -10,7 +10,7 @@
 	align-items: center;
 	justify-content: flex-start; /* Venstrejustér indhold */
 	height: 100vh; /* Fyld hele skærmhøjden */
-	overflow: hidden; /* har umiddelbart ingen virkning*/
+	overflow: hidden; /* element bliver usynligt, men har stadig virkning på layout.. evt. fjern!*/
 }
 
 .front__billede {

@@ -1,0 +1,63 @@
+/* ------------------------------------------ */
+/*                  OM MIG                    */
+/*             Mobile First Design            */
+/* ------------------------------------------ */
+
+main {
+	padding: 0 1.4rem;
+}
+
+.projekter__overskrift {
+	font-size: 80px; /* KIG PÅ DETTE SENERE */
+	text-align: left;
+	margin-bottom: 0rem;
+	padding-top: 2rem;
+}
+
+.projekter__introtekst {
+	margin-bottom: 0rem;
+	padding-bottom: 2rem;
+	letter-spacing: 0.2rem;
+}
+
+/* ---------------GRID---------------- */
+.projekter {
+	padding: 2rem;
+	max-width: 1200px;
+}
+
+/* Her laver jeg så mange kolonner som der er plads til – hver kolonne skal være mindst 280px bred, men må gerne vokse og fylde det ledige rum. */
+
+.projekter__grid {
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.projekter__projekt {
+	display: flex;
+	flex-direction: column;
+	background: #f2f2f2;
+	border-radius: 40px; /* Afrundede kanter som mockup */
+	overflow: hidden; /* Skjult men påvirker stadig layout */
+	padding: 1rem;
+	margin-bottom: 4rem;
+}
+
+.projekter__billede {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.projekter__tekst {
+	padding: 1rem;
+}
+
+.projekter__title {
+	margin: 0 0 0.5rem;
+}
+
+.projekter__beskrivelse {
+	margin: 0;
+}
