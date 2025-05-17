@@ -29,12 +29,12 @@ main {
 	margin: 0 auto; /* top & bund = 0, V/H=automatisk */
 }
 
-/* Her laver jeg så mange kolonner som der er plads til – hver kolonne skal være mindst 280px bred, men må gerne vokse og fylde det ledige rum. */
+/* Her laver jeg så mange kolonner som der er plads til – hver kolonne skal være mindst 350px bred, men må gerne vokse og fylde det ledige rum. */
 
 .projekter__grid {
 	display: grid;
 	gap: 2rem;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .projekter__projekt {
