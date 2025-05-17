@@ -10,18 +10,17 @@
 	align-items: center;
 	justify-content: flex-start; /* Venstrejustér indhold */
 	height: 100vh; /* Fyld hele skærmhøjden */
-	overflow: hidden; /* element bliver usynligt, men har stadig virkning på layout.. evt. fjern!*/
 }
 
 .front__billede {
 	position: absolute;
 	top: 0;
-	left: 0; /*placering øverst i venstre hjørne*/
+	left: 0; /* Placering øverst i venstre hjørne*/
 	width: 100%;
 	height: 100%;
-	object-fit: cover; /*billedet fylder hele des boks*/
+	object-fit: cover; /* Billedet dækker hele boksen*/
 	object-position: 50% 10%;
-	z-index: -1; /* Billedet bag teksten */
+	z-index: -1; /* Lægger baggrundsbilledet bag teksten */
 }
 
 .front__name,
@@ -30,7 +29,7 @@
 	padding-left: 1.4rem;
 	padding-right: 1.4rem;
 	max-width: 600px;
-	margin: inherit; /* Arv margin fra forælder */
+	margin: auto; /* Centrerer indhold horisontalt */
 }
 
 /* ---- ABOUT & PROJEKTER SEKTION ---- */
@@ -52,70 +51,61 @@
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 	margin-top: 1rem;
-	margin-left: inherit;
-	margin-right: inherit;
-	padding-left: 1.4rem;
-	padding-right: 1.4rem;
+	margin-left: auto;
+	margin-right: auto;
 }
 
+/* Horisontal linje i ABOUT */
 hr.about__divider {
 	border: none;
 	height: 1px;
 	width: 100%;
 	background-color: var(--color-hr);
-	margin: 2rem auto; /* writespace*/
+	margin: 2rem auto;
 }
 
+/* Divider i midten skjules*/
 hr.main__divider {
 	display: none;
 }
 
-/* ---- CALL-TO-ACTION ---- */
-/* Første iteration
-.about__link, 
-.projects__link {
-	font-weight: 600;
-	margin-top: 1rem;
-}*/
-
-/* anden iteration*/
-.about__link,
-.projects__link {
-	position: relative; /* beholder sin plads i layout + anker for absolut*/
-	display: inline-block; /* Gør linket til en "blok" på linje*/
-	padding: 0.75rem 1.5rem;
-	font-weight: 600;
-	font-size: 1rem;
-	color: #f2f2f2;
-	overflow: hidden; /* Sørger for, at alt indhold (animationen ↓ )udenfor kanten bliver skjult*/
-	border: 1px solid #f2f2f2;
-	border-radius: 2rem; /* husk rep. ved alle knapper*/
-	transition: color 0.3s ease; /*Når farven ændrer sig, skal det ske over 0,3 sekunder med en glidende bevægelse*/
-}
-
+/* ---- CALL-TO-ACTION: ANIMATION ---- */
+/* Sorry for alle noterne. De er til for at understøtte min læring */
 .projects__link {
 	margin-bottom: 1rem;
 }
 
+.about__link,
+.projects__link {
+	position: relative; /* gør det muligt at placere ::before relativt til linket */
+	display: inline-block; /* gør det muligt at give linket padding og størrelse */
+	padding: 0.75rem 1.5rem; /* tilføjer luft inde i knappen */
+	font-weight: 600;
+	font-size: 1rem;
+	color: #f2f2f2;
+	overflow: hidden; /* skjuler ::before-elementet når det er uden for knappen */
+	border: 1px solid #f2f2f2;
+	border-radius: 2rem;
+	transition: color 0.3s ease; /* gør farveskiftet ved hover mere flydende */
+}
+
+/* Pseudo-element til animeret baggrund */
 .about__link::before,
 .projects__link::before {
-	content: ""; /*Opretter et usynligt element før det synlige linkindhold. Det er dette, vi bruger som "baggrund"*/
-	position: absolute; /* flytter sig i relation til ↑ */
-	top: 100%;
+	content: ""; /* laver et tomt pseudo-element, der fungerer som baggrund */
+	position: absolute; /* placerer pseudo-elementet relativt til linket */
+	top: 100%; /* starter under knappen */
 	left: 0;
 	width: 100%;
 	height: 100%;
 	background-color: #6e98c2;
-	transition: top 0.3s ease; /*Når vi ændrer top, sker det blødt over 0.3 sekunder.*/
-	z-index: -1; /* sørger for, at baggrundsanimationen er bag teksten */
+	transition: top 0.3s ease; /* gør opad-glidningen blød og glidende */
+	z-index: -1; /* placerer baggrunden bag tekstindholdet */
 }
-
-/*Når du holder musen over knappen, glider baggrunden (::before-elementet ↑ ) op og dækker hele baggrunden.*/
 .about__link:hover::before,
 .projects__link:hover::before {
-	top: 0;
+	top: 0; /* Når brugeren hover, glider baggrunden op */
 }
-
 .about__link:hover,
 .projects__link:hover {
 	color: #f2f2f2;
@@ -142,7 +132,7 @@ hr.main__divider {
 		display: grid;
 		grid-template-columns: 1fr 1fr; /* To kolonner */
 		grid-template-rows: auto auto; /* To rækker */
-		gap: 2rem; /* Mellemrum mellem kolonnerne */
+		gap: 2rem;
 		margin: inherit;
 	}
 
@@ -187,7 +177,7 @@ hr.main__divider {
 		height: auto;
 	}
 
-	/* Divider-oprydning */
+	/* Fjerner ekstra divider på tablet */
 	hr.about__divider {
 		display: none;
 	}

@@ -24,7 +24,7 @@ body {
 	font-family: var(--font-secondary); /* standard font for body*/
 }
 
-* {
+/* {
 	border: 1px dotted greenyellow;
 }
 
