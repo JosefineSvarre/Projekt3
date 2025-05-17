@@ -10,6 +10,7 @@
 	--color-heading-h3: #d68c87;
 	--color-hr: #cdd687;
 	--color-link-hover: #6e98c2;
+	--color-strong: #6e98c2;
 
 	--font-primary: "Playfair Display", serif;
 	--font-secondary: "Lato", sans-serif;
@@ -78,6 +79,11 @@ a {
 
 a:hover {
 	color: var(--color-link-hover);
+	font-weight: 600;
+}
+
+strong {
+	color: var(--color-strong);
 	font-weight: 600;
 }
 
