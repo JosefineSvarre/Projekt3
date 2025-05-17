@@ -1,5 +1,5 @@
 /* ------------------------------------------ */
-/*                  OM MIG                    */
+/*                 PROJEKTER                  */
 /*             Mobile First Design            */
 /* ------------------------------------------ */
 
@@ -41,8 +41,6 @@ main {
 	display: flex;
 	flex-direction: column;
 	background: none;
-	border-radius: 40px; /* Afrundede kanter som mockup */
-	overflow: hidden; /* Skjult men påvirker stadig layout */
 	padding: 1rem;
 	margin-bottom: 4rem;
 }
@@ -51,6 +49,7 @@ main {
 	display: block;
 	width: 100%;
 	height: auto;
+	border-radius: 40px; /* Afrundede kanter som mockup */
 }
 
 .projekter__tekst {
@@ -63,4 +62,38 @@ main {
 
 .projekter__beskrivelse {
 	margin: 0;
+}
+
+/* ---- CALL-TO-ACTION: ANIMATION ---- */
+.projekter__ctaKnap {
+	position: relative;
+	display: inline-block;
+	padding: 0.75rem 1.5rem;
+	font-weight: 600;
+	color: var(--color-white);
+	overflow: hidden;
+	border: 1px solid #f2f2f2;
+	border-radius: 2rem;
+	transition: color 0.3s ease;
+	margin-top: 1rem;
+}
+
+.projekter__ctaKnap::before {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #6e98c2;
+	transition: top 0.3s ease;
+	z-index: -1;
+}
+
+.projekter__ctaKnap:hover::before {
+	top: 0;
+}
+
+.projekter__ctaKnap:hover {
+	color: #f2f2f2;
 }
