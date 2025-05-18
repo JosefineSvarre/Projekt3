@@ -61,6 +61,14 @@ hr.main__divider {
 	margin-top: 0rem;
 }
 
+.anbefaling__ikon {
+	/*DET SER BARE IKKE SÅ GODT UD*/
+	font-size: 40px;
+	color: #f2f2f2;
+	position: relative;
+	top: 10px;
+}
+
 /* ------------------------------------------ */
 /*            MEDIA QUERIES: TABLET           */
 /* ------------------------------------------ */
