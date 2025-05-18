@@ -1,0 +1,146 @@
+/* -------------------- */
+/*   PROJEKT SECTION    */
+/* -------------------- */
+
+.projekt {
+	padding: 1.5rem 1rem;
+	max-width: 100%;
+}
+
+.projekt__forside {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.projekt__forsideBillede {
+	width: 50%;
+	border-radius: 0.5rem;
+	object-fit: cover;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /*overvej at integrere*/
+}
+
+.projekt__forsideTekst {
+	width: 100%;
+}
+
+.projekt__titel {
+	font-family: var(--font-primary);
+	font-size: 2rem;
+	font-weight: 800;
+	margin-bottom: 0.5rem;
+	letter-spacing: 0.05em;
+	color: var(--color-text);
+}
+
+.projekt__undertitel {
+	font-family: var(--font-secondary);
+	font-style: italic;
+	margin-bottom: 1rem;
+}
+
+.projekt__info {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.projekt__overskrift {
+	font-family: var(--font-primary);
+	font-size: 1.5rem;
+	font-weight: 800;
+	color: var(--color-heading-h3);
+	margin: 2rem 0 1rem;
+}
+
+.projekt__tekst {
+	font-family: var(--font-secondary);
+	color: var(--color-text);
+	line-height: 1.6;
+	max-width: 70ch;
+}
+
+.projekt__udfordringLoesning {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-top: 2rem;
+}
+
+.projekt__udfordring,
+.projekt__loesning {
+	flex: 1 1 auto;
+}
+
+.projekt__liste {
+	padding-left: 1.2rem;
+}
+
+.projekt__resultat {
+	margin-top: 2rem;
+}
+
+.projekt__tags {
+	margin-top: 2rem;
+}
+
+.projekt__tagsTitel {
+	font-weight: 600;
+	font-size: 1.1rem;
+	margin-bottom: 0.5rem;
+}
+
+.projekt__tagsListe {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.projekt__tag {
+	background-color: var(--color-strong);
+	color: var(--color-background);
+	padding: 0.4rem 0.75rem;
+	border-radius: 999px;
+	font-size: 0.85rem;
+	font-weight: 600;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+@media (min-width: 768px) {
+	.projekt {
+		padding: 2rem;
+		max-width: 720px;
+		margin: 0 auto;
+	}
+
+	.projekt__forside {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.projekt__forsideTekst {
+		padding-left: 2rem;
+	}
+
+	.projekt__titel {
+		font-size: 2.5rem;
+	}
+
+	.projekt__undertitel {
+		font-size: 1.125rem;
+	}
+
+	.projekt__udfordringLoesning {
+		flex-direction: row;
+	}
+}
+
+@media (min-width: 1024px) {
+	.projekt {
+		max-width: 960px;
+	}
+}
