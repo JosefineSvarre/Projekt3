@@ -23,6 +23,7 @@ main {
 
 .projekt__heroTekst {
 	width: 100%;
+	word-break: break-word;
 }
 
 /* ------------------------------------------ */
