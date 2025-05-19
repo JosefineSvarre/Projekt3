@@ -26,13 +26,28 @@ main {
 	word-break: break-word;
 }
 
+.projekt__titel {
+	margin-bottom: 1rem;
+}
+
+.projekt__infotekst {
+	font-size: 0.875rem; /* lidt mindre end normal tekst */
+	margin: 0.2rem 0;
+	color: #cccccc; /* grå farve! HUSK DETTE IFT. KONTRAST!!! */
+}
+
+.projekt__info {
+	margin-top: 1.5rem; /* giver afstand til undertitel */
+}
+
 /* ------------------------------------------ */
 /*            MEDIA QUERIES: TABLET           */
 /* ------------------------------------------ */
 @media (min-width: 768px) {
 	.projekt__hero {
 		flex-direction: row;
-		align-items: center;
+		align-items: flex-start;
+		padding-top: 5.7rem; /* For højden på navbar */
 	}
 
 	.projekt__heroBillede {
@@ -51,5 +66,15 @@ main {
 
 	.projekt__undertitel {
 		font-size: 1.125rem;
+		width: 80%;
+	}
+}
+
+/* ------------------------------------------ */
+/*           MEDIA QUERIES: DESKTOP           */
+/* ------------------------------------------ */
+@media (min-width: 992px) {
+	.projekt__titel {
+		width: 80%;
 	}
 }
