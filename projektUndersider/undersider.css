@@ -11,12 +11,12 @@ main {
 .projekt__hero {
 	display: flex;
 	flex-direction: column;
-	gap: 1.5rem;
-	margin-bottom: 2rem;
+	gap: 1rem;
 }
 
 .projekt__heroBillede {
 	width: 100%;
+	max-width: 650px;
 	border-radius: 40px;
 	object-fit: cover;
 	margin-top: 5rem;
@@ -27,18 +27,21 @@ main {
 	word-break: break-word;
 }
 
-.projekt__titel {
-	margin-bottom: 1rem;
+.projekt__undertitel {
+	font-size: 1.25rem; /* 20px */
+	margin-top: 1rem;
+	margin-bottom: 3rem;
 }
 
 .projekt__infotekst {
 	font-size: 0.875rem; /* lidt mindre end normal tekst */
 	margin: 0.2rem 0;
-	color: #cccccc; /* grå farve! HUSK DETTE IFT. KONTRAST!!! */
+	color: #cccccc;
 }
 
 .projekt__info {
 	margin-top: 1.5rem; /* giver afstand til undertitel */
+	margin-bottom: 1.5rem;
 }
 
 /* ---------- INTRODUKTION ----------- */
@@ -47,14 +50,8 @@ main {
 	margin-top: 2rem;
 }
 
-.projekt__introOverskrift {
-	font-size: 1.25rem; /* 20px */ /* HUSK AT KIGGE PÅ ALLE STØRRELSER TIL SLUT!*/
-	margin-bottom: 0.8rem;
-}
-
 .projekt__introTekst {
-	font-size: 0.95rem; /* UNDERSØG OM DETTE EVT. SKAL VÆRE STØRRELSEN PÅ ALLE P*/
-	max-width: 38ch; /* 30-40 CPL er godt på mobil */
+	max-width: 38ch; /* 30-40 CPL er godt på mobil  FIND EN LØSNING PÅ DETTE*/
 }
 
 /* ------- UDFORDRING & LØSNING -------- */
@@ -65,35 +62,16 @@ main {
 	margin-top: 2rem;
 }
 
-.projekt__overskrift {
-	font-size: 1.25rem; /* 20px */ /* HUSK AT KIGGE PÅ ALLE STØRRELSER TIL SLUT!*/
-	margin-bottom: 0.8rem;
-}
-
 .projekt__tekst {
-	font-size: 0.95rem;
 	max-width: 38ch;
 }
 
 .projekt__listeOverskrift {
-	font-size: 0.95rem;
-	max-width: 38ch;
-	margin-bottom: 0.8rem;
-}
-
-.projekt__liste {
-	padding-left: 1.2rem; /* indryk fra venstre*/
-	margin-top: 0rem;
-}
-
-.projekt__liste li {
-	margin-bottom: 0.5rem;
-	line-height: 1.5;
+	margin-top: 2.5rem;
 }
 
 .projekt__nøgleoverskrift {
-	font-size: 0.95rem;
-	margin-top: 2rem;
+	margin-top: 2.5rem;
 }
 
 /* ------------ GALLERI ------------- */
@@ -126,11 +104,6 @@ main {
 	align-items: center;
 }
 
-/* Tekstkolonne */
-.projekt__tekstKolonne {
-	width: 100%;
-}
-
 .projekt__tekstBillede {
 	width: 100%;
 	height: auto;
@@ -142,10 +115,7 @@ main {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
-.projekt__tagsTitel {
-	font-size: 1rem;
-	margin-bottom: 0.5rem;
-}
+
 .projekt__tagsListe {
 	display: flex;
 	flex-wrap: wrap; /* tillader at tags kan bryde linje */
@@ -168,7 +138,6 @@ main {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-top: 2rem;
 }
 .projekt__ctaKnap {
 	position: relative;
@@ -181,6 +150,7 @@ main {
 	border-radius: 2rem;
 	transition: color 0.3s ease;
 	margin-top: 1rem;
+	margin-bottom: 3rem;
 }
 
 .projekt__ctaKnap::before {
@@ -209,22 +179,14 @@ main {
 @media (min-width: 768px) {
 	.projekt__hero {
 		flex-direction: row;
-		align-items: flex-start;
+		align-items: center;
+		gap: 2rem;
 		padding-top: 5.7rem; /* For højden på navbar */
 	}
 
 	.projekt__heroBillede {
 		width: 58%;
 		margin-top: 0;
-	}
-
-	.projekt__heroTekst {
-		width: 50%;
-		padding-left: 0rem;
-	}
-
-	.projekt__titel {
-		font-size: 2.5rem;
 	}
 
 	.projekt__undertitel {

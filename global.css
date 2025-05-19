@@ -95,6 +95,20 @@ a:hover {
 	font-weight: 600;
 }
 
+ul {
+	font-family: var(--font-secondary);
+	font-size: 1rem;
+	line-height: 1.6;
+	letter-spacing: 0.1em;
+	margin-bottom: 1rem;
+	padding-left: 1.5rem; /* giver indrykning til bullets */
+	list-style-type: disc;
+}
+
+li {
+	margin-bottom: 0.5rem; /* lidt luft mellem punkterne */
+}
+
 strong {
 	color: var(--color-strong);
 	font-weight: 600;
