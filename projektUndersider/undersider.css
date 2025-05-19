@@ -137,6 +137,32 @@ main {
 	border-radius: 40px;
 }
 
+/* ------------- TAGS ------------- */
+.projekt__tags {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+.projekt__tagsTitel {
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+}
+.projekt__tagsListe {
+	display: flex;
+	flex-wrap: wrap; /* tillader at tags kan bryde linje */
+	gap: 0.6rem;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.projekt__tag {
+	background-color: var(--color-strong);
+	color: var(--color-background);
+	padding: 0.4rem 0.75rem;
+	border-radius: 999px; /* For ovale bokse */
+	border: 0.0625rem solid #f2f2f2;
+	font-size: 0.85rem; /* 13px */
+}
+
 /* ------------------------------------------ */
 /*            MEDIA QUERIES: TABLET           */
 /* ------------------------------------------ */

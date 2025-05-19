@@ -72,7 +72,7 @@ main {
 	font-weight: 600;
 	color: var(--color-white);
 	overflow: hidden;
-	border: 1px solid #f2f2f2;
+	border: 0.0625rem solid #f2f2f2;
 	border-radius: 2rem;
 	transition: color 0.3s ease;
 	margin-top: 1rem;
