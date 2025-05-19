@@ -162,6 +162,46 @@ main {
 	font-size: 0.85rem; /* 13px */
 }
 
+/* ---- CALL-TO-ACTION: ANIMATION ---- */
+.projekt__cta {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 2rem;
+}
+.projekt__ctaKnap {
+	position: relative;
+	display: inline-block;
+	padding: 0.75rem 1.5rem;
+	font-weight: 600;
+	color: var(--color-white);
+	overflow: hidden;
+	border: 0.0625rem solid #f2f2f2;
+	border-radius: 2rem;
+	transition: color 0.3s ease;
+	margin-top: 1rem;
+}
+
+.projekt__ctaKnap::before {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #6e98c2;
+	transition: top 0.3s ease;
+	z-index: -1;
+}
+
+.projekt__ctaKnap:hover::before {
+	top: 0;
+}
+
+.projekt__ctaKnap:hover {
+	color: #f2f2f2;
+}
 /* ------------------------------------------ */
 /*            MEDIA QUERIES: TABLET           */
 /* ------------------------------------------ */
