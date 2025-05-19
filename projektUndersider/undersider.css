@@ -57,9 +57,90 @@ main {
 	max-width: 38ch; /* 30-40 CPL er godt på mobil */
 }
 
+/* ------- UDFORDRING & LØSNING -------- */
+.projekt__udfordringOgLoesning {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-top: 2rem;
+}
+
+.projekt__overskrift {
+	font-size: 1.25rem; /* 20px */ /* HUSK AT KIGGE PÅ ALLE STØRRELSER TIL SLUT!*/
+	margin-bottom: 0.8rem;
+}
+
+.projekt__tekst {
+	font-size: 0.95rem;
+	max-width: 38ch;
+}
+
+.projekt__listeOverskrift {
+	font-size: 0.95rem;
+	max-width: 38ch;
+	margin-bottom: 0.8rem;
+}
+
+.projekt__liste {
+	padding-left: 1.2rem; /* indryk fra venstre*/
+	margin-top: 0rem;
+}
+
+.projekt__liste li {
+	margin-bottom: 0.5rem;
+	line-height: 1.5;
+}
+
+.projekt__nøgleoverskrift {
+	font-size: 0.95rem;
+	margin-top: 2rem;
+}
+
+/* ------------ GALLERI ------------- */
+/* Opretter et responsivt grid:
+  - 'auto-fit' tilpasser antallet af kolonner automatisk efter pladsen
+  - 'minmax(200px, 1fr)' gør hver kolonne minimum 200px og max 1fr (deler resten af pladsen ligeligt)
+*/
+.projekt__galleri {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1rem;
+	margin-top: 2rem;
+}
+
+/* Billederne fylder hele grid-kolonnen og bevarer deres proportioner */
+/* brug  object-fit: cover; hvis du ønsker at få det hele til at fitte -You know */
+.projekt__galleriBillede {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 40px;
+}
+
+/* ------ DESIGNMÆSSIGE VALG ------- */
+.projekt__tekstBilledeSektion {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-top: 2rem; /* HUSK AT RETTE DETTE FOR MERE WRITESPACE! */
+	align-items: center;
+}
+
+/* Tekstkolonne */
+.projekt__tekstKolonne {
+	width: 100%;
+}
+
+.projekt__tekstBillede {
+	width: 100%;
+	height: auto;
+	border-radius: 40px;
+}
+
 /* ------------------------------------------ */
 /*            MEDIA QUERIES: TABLET           */
 /* ------------------------------------------ */
+/* --------------- HERO -------------- */
 @media (min-width: 768px) {
 	.projekt__hero {
 		flex-direction: row;
@@ -89,14 +170,62 @@ main {
 
 /* ---------- INTRODUKTION ----------- */
 @media (min-width: 768px) {
-	.projekt__introTekst {
+	.projekt__tekst {
 		max-width: 62ch; /*60-75 CPL er godt + align med billede */
+	}
+}
+
+/* ------- UDFORDRING & LØSNING -------- */
+@media (min-width: 768px) {
+	.projekt__udfordringOgLoesning {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.projekt__udfordring,
+	.projekt__loesning {
+		width: 48%;
+	}
+
+	.projekt__tekst {
+		max-width: 62ch;
+	}
+}
+
+@media (min-width: 992px) {
+	.projekt__tekst {
+		max-width: 60ch;
+	}
+}
+
+/* ------ DESIGNMÆSSIGE VALG ------- */
+@media (min-width: 768px) {
+	.projekt__tekstBilledeSektion {
+		flex-direction: row;
+		align-items: flex-start;
+	}
+
+	.projekt__tekstKolonne {
+		width: 50%;
+	}
+
+	.projekt__billedeKolonne {
+		width: 50%;
+		display: flex;
+		justify-content: center; /* centrerer billedet */
+	}
+
+	.projekt__tekstBillede {
+		width: 100%;
+		height: auto;
+		max-width: 35rem;
 	}
 }
 
 /* ------------------------------------------ */
 /*           MEDIA QUERIES: DESKTOP           */
 /* ------------------------------------------ */
+/* --------------- HERO -------------- */
 @media (min-width: 992px) {
 	.projekt__titel {
 		width: 80%;
@@ -109,7 +238,7 @@ main {
 
 /* ---------- INTRODUKTION ----------- */
 @media (min-width: 992px) {
-	.projekt__introTekst {
+	.projekt__tekst {
 		max-width: 60ch; /*60-75 CPL er godt + align med billede */
 	}
 }
