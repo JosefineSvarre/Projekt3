@@ -131,7 +131,7 @@ h3 + p {
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
-	text-decoration: none; /* fjerner understregning */
+	text-decoration: none;
 	color: var(--color-text);
 }
 
