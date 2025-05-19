@@ -2,6 +2,7 @@
 /*           UNDERSIDE TIL PROJEKTER          */
 /*             Mobile First Design            */
 /* ------------------------------------------ */
+/* --------------- HERO -------------- */
 main {
 	padding: 0 1.4rem;
 	max-width: 100%;
@@ -40,6 +41,22 @@ main {
 	margin-top: 1.5rem; /* giver afstand til undertitel */
 }
 
+/* ---------- INTRODUKTION ----------- */
+
+.projekt__intro {
+	margin-top: 2rem;
+}
+
+.projekt__introOverskrift {
+	font-size: 1.25rem; /* 20px */ /* HUSK AT KIGGE PÅ ALLE STØRRELSER TIL SLUT!*/
+	margin-bottom: 0.8rem;
+}
+
+.projekt__introTekst {
+	font-size: 0.95rem; /* UNDERSØG OM DETTE EVT. SKAL VÆRE STØRRELSEN PÅ ALLE P*/
+	max-width: 38ch; /* 30-40 CPL er godt på mobil */
+}
+
 /* ------------------------------------------ */
 /*            MEDIA QUERIES: TABLET           */
 /* ------------------------------------------ */
@@ -51,13 +68,13 @@ main {
 	}
 
 	.projekt__heroBillede {
-		width: 50%;
+		width: 58%;
 		margin-top: 0;
 	}
 
 	.projekt__heroTekst {
 		width: 50%;
-		padding-left: 2rem;
+		padding-left: 0rem;
 	}
 
 	.projekt__titel {
@@ -70,11 +87,29 @@ main {
 	}
 }
 
+/* ---------- INTRODUKTION ----------- */
+@media (min-width: 768px) {
+	.projekt__introTekst {
+		max-width: 62ch; /*60-75 CPL er godt + align med billede */
+	}
+}
+
 /* ------------------------------------------ */
 /*           MEDIA QUERIES: DESKTOP           */
 /* ------------------------------------------ */
 @media (min-width: 992px) {
 	.projekt__titel {
 		width: 80%;
+	}
+
+	.projekt__info {
+		margin-top: 4rem; /* giver afstand til undertitel */
+	}
+}
+
+/* ---------- INTRODUKTION ----------- */
+@media (min-width: 992px) {
+	.projekt__introTekst {
+		max-width: 60ch; /*60-75 CPL er godt + align med billede */
 	}
 }
