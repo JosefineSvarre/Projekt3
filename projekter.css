@@ -8,10 +8,8 @@ main {
 }
 
 .projekter__overskrift {
-	font-size: 80px; /* KIG PÅ DETTE SENERE */
-	text-align: left;
 	margin-bottom: 0rem;
-	padding-top: 2rem;
+	padding-top: 5.7rem; /* For højden på navbar */
 }
 
 .projekter__introtekst {
@@ -96,4 +94,14 @@ main {
 
 .projekter__ctaKnap:hover {
 	color: #f2f2f2;
+}
+
+/* ------------------------------------------ */
+/*            MEDIA QUERIES: TABLET           */
+/* ------------------------------------------ */
+@media (min-width: 768px) {
+	.projekter__introtekst {
+		font-size: 1.5rem;
+		max-width: 50%;
+	}
 }
