@@ -92,9 +92,11 @@ hr.main__divider {
 		margin-bottom: 2rem;
 	}
 
-	.omMig__venstre,
 	.omMig__højre {
-		flex: 1; /* hver side får lige meget pladds*/
+		display: flex;
+		flex-direction: column;
+		align-items: center; /* centrerer billede og værktøjskasse horisontalt */
+		gap: 2rem; /* afstand mellem billede og værktøjskasse */
 	}
 
 	.omMig__billede {
@@ -123,14 +125,6 @@ hr.main__divider {
 /*           MEDIA QUERIES: DESKTOP           */
 /* ------------------------------------------ */
 @media (min-width: 768px) {
-	.omMig__billede {
-		margin-left: 3.2rem;
-	}
-
-	.omMig__værktejskasse {
-		margin-left: 3.2rem;
-	}
-
 	.programmer__icons img {
 		width: 125px;
 		height: auto;
@@ -153,5 +147,10 @@ hr.main__divider {
 
 	.omMig__værktejskasse {
 		margin-left: 6.2rem;
+	}
+
+	.programmer__title {
+		margin-top: 0rem;
+		padding: 0rem;
 	}
 }
