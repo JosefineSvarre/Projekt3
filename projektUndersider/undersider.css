@@ -52,6 +52,7 @@ main {
 
 .projekt__introTekst {
 	max-width: 38ch; /* 30-40 CPL er godt på mobil  FIND EN LØSNING PÅ DETTE*/
+	line-height: 2rem;
 }
 
 /* ------- UDFORDRING & LØSNING -------- */
@@ -64,6 +65,10 @@ main {
 
 .projekt__tekst {
 	max-width: 38ch;
+}
+
+.projekt__tekstKolonne {
+	margin-right: 2rem;
 }
 
 .projekt__listeOverskrift {
@@ -100,7 +105,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
-	margin-top: 2rem; /* HUSK AT RETTE DETTE FOR MERE WRITESPACE! */
+	margin-top: 3rem; /* HUSK AT RETTE DETTE FOR MERE WRITESPACE! */
 	align-items: center;
 }
 
@@ -200,6 +205,10 @@ main {
 	.projekt__tekst {
 		max-width: 62ch; /*60-75 CPL er godt + align med billede */
 	}
+
+	.projekt__introTekst {
+		max-width: 62ch;
+	}
 }
 
 /* ------- UDFORDRING & LØSNING -------- */
@@ -207,24 +216,10 @@ main {
 	.projekt__udfordringOgLoesning {
 		flex-direction: row;
 		justify-content: space-between;
-	}
-
-	.projekt__udfordring,
-	.projekt__loesning {
-		width: 48%;
-	}
-
-	.projekt__tekst {
-		max-width: 62ch;
+		margin-top: 5rem;
+		gap: 4rem;
 	}
 }
-
-@media (min-width: 992px) {
-	.projekt__tekst {
-		max-width: 60ch;
-	}
-}
-
 /* ------ DESIGNMÆSSIGE VALG ------- */
 @media (min-width: 768px) {
 	.projekt__tekstBilledeSektion {
@@ -245,7 +240,7 @@ main {
 	.projekt__tekstBillede {
 		width: 100%;
 		height: auto;
-		max-width: 35rem;
+		max-width: 40rem;
 	}
 }
 
@@ -266,6 +261,18 @@ main {
 /* ---------- INTRODUKTION ----------- */
 @media (min-width: 992px) {
 	.projekt__tekst {
-		max-width: 60ch; /*60-75 CPL er godt + align med billede */
+		max-width: 70ch; /*60-75 CPL er godt + align med billede */
+	}
+
+	.projekt__introTekst {
+		max-width: 70ch;
+	}
+}
+
+/* ------- UDFORDRING & LØSNING -------- */
+@media (min-width: 992px) {
+	.projekt__udfordring,
+	.projekt__loesning {
+		max-width: 70ch;
 	}
 }

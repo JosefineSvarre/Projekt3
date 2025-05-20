@@ -10,17 +10,19 @@ main {
 /* ---------OM MIG SEKTION------------ */
 
 .omMig__title {
-	font-size: 80px; /* KIG PÅ DETTE SENERE */
 	text-align: left;
+	margin-top: 2rem;
 	margin-bottom: 0rem;
-	padding-top: 2rem;
+	padding-top: 5.7rem; /* For højden på navbar */
 }
 
 .omMig__subtitle {
 	margin-bottom: 0rem;
+	margin-top: 1rem;
 	padding-bottom: 2rem;
 	font-style: italic;
 	letter-spacing: 0.2rem;
+	font-size: 1.2rem;
 }
 
 .omMig__billede {
@@ -120,7 +122,7 @@ hr.main__divider {
 /* ------------------------------------------ */
 /*           MEDIA QUERIES: DESKTOP           */
 /* ------------------------------------------ */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 	.omMig__billede {
 		margin-left: 3.2rem;
 	}
@@ -133,7 +135,16 @@ hr.main__divider {
 		width: 125px;
 		height: auto;
 	}
+
+	.programmer__title {
+		margin-top: 0rem;
+		padding: 0rem;
+	}
 }
+
+/* ------------------------------------------ */
+/*           MEDIA QUERIES: DESKTOP           */
+/* ------------------------------------------ */
 
 @media (min-width: 1311px) {
 	.omMig__billede {
