@@ -87,6 +87,7 @@ hr.main__divider {
 	border: 1px solid #f2f2f2;
 	border-radius: 2rem;
 	transition: color 0.3s ease; /* gør farveskiftet ved hover mere flydende */
+	margin-top: 2rem;
 }
 
 /* Pseudo-element til animeret baggrund */
