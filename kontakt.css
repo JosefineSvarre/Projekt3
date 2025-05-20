@@ -19,7 +19,7 @@ main {
 	margin-bottom: 4.5rem;
 }
 
-.main__dividerHorisontal {
+.main__dividerVertikal {
 	display: none;
 }
 
@@ -133,7 +133,7 @@ Række 4
 		display: none;
 	}
 
-	.main__dividerHorisontal {
+	.main__dividerVertikal {
 		display: block; /*gør stregn synlig igen*/
 		border: none; /* Fjerner hr's standard-streg*/
 		width: 1px;

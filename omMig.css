@@ -33,6 +33,10 @@ main {
 	margin-right: auto;
 }
 
+.omMig__dividerVertikal {
+	display: none;
+}
+
 /* ---- CALL-TO-ACTION: ANIMATION ---- */
 .omMig__callAction {
 	display: flex;
@@ -80,7 +84,7 @@ main {
 }
 
 /* ------PROGRAMMER--------- */
-.omMig__værktejskasse {
+.omMig__varktejskasse {
 	margin-top: 1rem;
 	margin-bottom: 3rem;
 	border-top: 1px solid var(--color-hr);
@@ -97,7 +101,7 @@ main {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 1rem;
-	justify-items: left;
+	justify-items: center;
 	margin-top: 1rem;
 }
 
@@ -122,6 +126,10 @@ hr.main__divider {
 	color: #f2f2f2;
 	position: relative;
 	top: 10px;
+}
+.anbefaling_author {
+	display: block;
+	margin-top: 2.5rem;
 }
 
 /* ------------------------------------------ */
@@ -149,6 +157,11 @@ hr.main__divider {
 		max-width: 70ch;
 	}
 
+	.omMig__callAction {
+		flex-direction: column;
+		justify-content: flex-end; /* Flyt knappen til højre */
+	}
+
 	.omMig__højre {
 		display: flex;
 		flex-direction: column;
@@ -161,10 +174,10 @@ hr.main__divider {
 		max-width: 100%;
 		height: auto;
 		border-radius: 40px;
-		margin-top: 6.2rem; /* Juster hvis nødvendigt */
+		margin-top: 11rem; /* Juster hvis nødvendigt */
 	}
 
-	.omMig__værktejskasse {
+	.omMig__varktejskasse {
 		margin-top: 2rem;
 	}
 
@@ -178,9 +191,7 @@ hr.main__divider {
 	}
 }
 
-/* ------------------------------------------ */
-/*           MEDIA QUERIES: DESKTOP           */
-/* ------------------------------------------ */
+/* ------PROGRAMMER--------- */
 @media (min-width: 768px) {
 	.programmer__icons img {
 		width: 125px;
@@ -190,11 +201,6 @@ hr.main__divider {
 	.programmer__title {
 		margin-top: 0rem;
 		padding: 0rem;
-	}
-
-	.omMig__callAction {
-		flex-direction: column;
-		justify-content: flex-end; /* Flyt knappen til højre */
 	}
 }
 
@@ -206,12 +212,40 @@ hr.main__divider {
 		margin-left: 6.2rem;
 	}
 
-	.omMig__værktejskasse {
+	.omMig__højre {
+		position: relative; /* gør det muligt at placere linjen korrekt */
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	.omMig__varktejskasse {
 		margin-left: 6.2rem;
 	}
 
 	.programmer__title {
 		margin-top: 0rem;
 		padding: 0rem;
+	}
+
+	.programmer__icons {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: 1rem;
+		justify-items: center;
+		margin-top: 1rem;
+	}
+
+	.omMig__dividerVertikal {
+		display: block; /*gør stregn synlig igen*/
+		border: none; /* Fjerner hr's standard-streg*/
+		width: 1px;
+		height: 40%;
+		background-color: var(--color-hr);
+		position: absolute;
+		top: 50%; /* centrerer vertikalt */
+		left: 80%; /* forsøger at tilpasse position til billede */
+		transform: translate(-80%, -80%); /* centrerer både X og Y */
 	}
 }
