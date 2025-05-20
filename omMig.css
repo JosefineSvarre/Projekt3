@@ -29,6 +29,54 @@ main {
 	display: block;
 	max-width: 60%;
 	border-radius: 40px; /* Afrundede kanter som mockup */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ---- CALL-TO-ACTION: ANIMATION ---- */
+.omMig__callAction {
+	display: flex;
+	flex-direction: column;
+	justify-content: center; /* Centrer knappen på mobil */
+}
+
+.omMig__knap {
+	margin-bottom: 3rem;
+	align-self: center; /* Sørger for, at knappen ikke strækker sig */
+	width: auto; /* Beholder den naturlige størrelse */
+	max-width: 200px;
+}
+
+.omMig__knap {
+	position: relative;
+	display: inline-block;
+	padding: 0.75rem 1.5rem;
+	font-weight: 600;
+	font-size: 1rem;
+	color: #f2f2f2;
+	overflow: hidden;
+	border: 1px solid #f2f2f2;
+	border-radius: 2rem;
+	transition: color 0.3s ease;
+}
+
+.omMig__knap::before {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #6e98c2;
+	transition: top 0.3s ease;
+	z-index: -1;
+}
+
+.omMig__knap:hover::before {
+	top: 0;
+}
+.omMig__knap:hover {
+	color: #f2f2f2;
 }
 
 /* ------PROGRAMMER--------- */
@@ -38,6 +86,11 @@ main {
 	border-top: 1px solid var(--color-hr);
 	border-left: 1px solid var(--color-hr);
 	padding: 1rem;
+}
+
+.programmer__title {
+	margin-top: 0rem;
+	padding: 0rem;
 }
 
 .programmer__icons {
@@ -92,6 +145,10 @@ hr.main__divider {
 		margin-bottom: 2rem;
 	}
 
+	.omMig__text {
+		max-width: 70ch;
+	}
+
 	.omMig__højre {
 		display: flex;
 		flex-direction: column;
@@ -134,12 +191,16 @@ hr.main__divider {
 		margin-top: 0rem;
 		padding: 0rem;
 	}
+
+	.omMig__callAction {
+		flex-direction: column;
+		justify-content: flex-end; /* Flyt knappen til højre */
+	}
 }
 
 /* ------------------------------------------ */
 /*           MEDIA QUERIES: DESKTOP           */
 /* ------------------------------------------ */
-
 @media (min-width: 1311px) {
 	.omMig__billede {
 		margin-left: 6.2rem;
