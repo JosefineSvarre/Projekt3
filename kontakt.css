@@ -36,6 +36,7 @@ main {
 	grid-template-rows: auto auto auto auto; /* fire rækker */
 	gap: 0rem;
 	margin-top: 0rem;
+	padding: 1rem;
 }
 
 /* Note
@@ -77,6 +78,7 @@ Række 4
 	grid-row: 3 / 4; /* række 3 */
 	justify-self: start;
 	margin-bottom: 0rem;
+	padding: 1rem 0;
 }
 
 .kontakt__tlf {
