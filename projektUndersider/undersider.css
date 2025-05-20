@@ -86,7 +86,7 @@ main {
 */
 .projekt__galleri {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	gap: 1rem;
 	margin-top: 2rem;
 }
@@ -110,7 +110,7 @@ main {
 }
 
 .projekt__tekstBillede {
-	width: 100%;
+	width: 70%;
 	height: auto;
 	border-radius: 40px;
 }
@@ -220,11 +220,12 @@ main {
 		gap: 4rem;
 	}
 }
+
 /* ------ DESIGNMÆSSIGE VALG ------- */
 @media (min-width: 768px) {
 	.projekt__tekstBilledeSektion {
 		flex-direction: row;
-		align-items: flex-start;
+		align-items: center;
 	}
 
 	.projekt__tekstKolonne {
@@ -232,9 +233,10 @@ main {
 	}
 
 	.projekt__billedeKolonne {
-		width: 50%;
+		width: 60%;
 		display: flex;
-		justify-content: center; /* centrerer billedet */
+		justify-content: center; /* centrerer vandret */
+		align-items: center; /* centrerer lodret */
 	}
 
 	.projekt__tekstBillede {
@@ -274,5 +276,22 @@ main {
 	.projekt__udfordring,
 	.projekt__loesning {
 		max-width: 70ch;
+	}
+}
+
+/* ------------ GALLERI ------------- */
+@media (min-width: 992px) {
+	.projekt__galleri {
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		gap: 1.5rem;
+	}
+}
+
+/* ------ DESIGNMÆSSIGE VALG ------- */
+@media (min-width: 992px) {
+	.projekt__tekstBillede {
+		width: 70%;
+		height: auto;
+		border-radius: 40px;
 	}
 }
