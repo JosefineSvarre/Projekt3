@@ -13,7 +13,7 @@ main {
 	text-align: left;
 	margin-top: 2rem;
 	margin-bottom: 0rem;
-	padding-top: 5.7rem; /* For højden på navbar */
+	padding-top: 8.5rem; /* For højden på navbar */
 }
 
 .omMig__subtitle {
@@ -141,10 +141,6 @@ hr.main__divider {
 	}
 
 	/* ---------OM MIG SEKTION------------ */
-
-	.omMig__title {
-		margin-top: 4.2rem;
-	}
 
 	.omMig__topSektion {
 		display: flex;
