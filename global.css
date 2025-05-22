@@ -6,8 +6,8 @@
 /* ---------- ROOT VARIABLES ---------- */
 :root {
 	--color-background: #222222;
-	--color-text: #f2f2f2;
-	--color-heading-h3: #d68c87;
+	--color-text: #f5f5f5;
+	--color-heading-h3: #dddddd;
 	--color-hr: #cdd687;
 	--color-link-hover: #6e98c2;
 	--color-strong: #6e98c2;
@@ -289,7 +289,7 @@
 		}
 
 		h2 {
-			font-size: 1.6rem; /* 25px */
+			font-size: 1.6rem; /* px */
 			line-height: 1.4;
 			margin-top: 2.5rem;
 		}

@@ -7,10 +7,9 @@
 :root {
 	--color-background: #222222;
 	--color-text: #f2f2f2;
-	--color-heading-h3: #d68c87;
+	--color-heading-h3: #dddddd;
 	--color-hr: #cdd687;
 	--color-link-hover: #6e98c2;
-	--color-strong: #6e98c2;
 
 	--font-primary: "Rammetto One", sans-serif;
 	--font-secondary: "Montserrat Alternates", sans-serif;
@@ -74,7 +73,7 @@ h4 {
 
 p {
 	font-family: var(--font-secondary);
-	font-weight: 300;
+	font-weight: 200;
 	font-size: 1rem; /* 16px */
 	line-height: 1.6;
 	margin-bottom: 1rem;
