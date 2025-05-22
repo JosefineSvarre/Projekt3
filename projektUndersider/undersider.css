@@ -34,7 +34,7 @@ main {
 }
 
 .projekt__infotekst {
-	font-size: 0.875rem; /* lidt mindre end normal tekst */
+	font-size: 0.1rem; /* lidt mindre end normal tekst */
 	margin: 0.2rem 0;
 	color: #cccccc;
 }
