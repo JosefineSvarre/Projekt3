@@ -167,7 +167,7 @@ main {
 	height: 100%;
 	background-color: #6e98c2;
 	transition: top 0.3s ease;
-	z-index: -1;
+	z-index: 1;
 }
 
 .projekt__ctaKnap:hover::before {
@@ -175,7 +175,7 @@ main {
 }
 
 .projekt__ctaKnap:hover {
-	color: #f2f2f2;
+	color: #222222;
 }
 /* ------------------------------------------ */
 /*            MEDIA QUERIES: TABLET           */
