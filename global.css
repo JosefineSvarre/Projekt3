@@ -197,7 +197,7 @@
 	.footer {
 		margin: 0rem;
 		padding: 0rem;
-		background-color: #1a1a1a;
+		background-color: #6e98c2;
 		border: 2px solid var(--color-text);
 		display: flex;
 		flex-direction: column;
