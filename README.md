@@ -1,2 +1,2 @@
 # Projekt3
-Mit eksamensprojekt.
+Dette er mit første kodningsprojekt.
