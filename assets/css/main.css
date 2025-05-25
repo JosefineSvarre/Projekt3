@@ -7,11 +7,12 @@
 :root {
 	--color-background: #222222;
 	--color-text: #f2f2f2;
-	--color-button--text: #000000;
+	--color-button--text: #222222;
 	--color-heading-h3: #dddddd;
 	--color-button: #6e98c2;
 	--color-button-hover: #4d79a1;
 	--color-pills: var(--color-button);
+	--color-link-hover: #4d79a1; 
 	--default-border-radius: 2.5rem;
 	--default-spacing: 1.5rem;
 	--line-height: 1.8;
