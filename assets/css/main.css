@@ -392,7 +392,8 @@ video {
 }
 
 @media (min-width: 768px) {
-	.navbar__toggle {
+	.navbar__toggle,
+	.navbar__close {
 		display: none;
 	}
 
@@ -408,6 +409,7 @@ video {
 	.navbar__list a {
 		background: none;
 		border: none;
+		font-size: 1rem;
 	}
 }
 
