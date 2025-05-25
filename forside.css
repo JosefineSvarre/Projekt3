@@ -26,18 +26,18 @@
 .front__name,
 .front__description {
 	text-align: left;
-	padding-left: 1.4rem;
-	padding-right: 1.4rem;
+	padding-left: var(--default-spacing, 1.4rem);
+	padding-right: var(--default-spacing, 1.4rem);
 	max-width: 600px;
 	margin: auto; /* Centrerer indhold horisontalt */
 }
 
 /* ---- ABOUT & PROJEKTER SEKTION ---- */
-.about__billede {
+.about__img {
 	display: none; /* skjules på mobil */
 }
 
-.projects__billede {
+.projects__img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -143,7 +143,7 @@ hr.main__divider {
 		padding: 2rem;
 	}
 
-	.about__billede {
+	.about__img {
 		display: block;
 		max-width: 610px;
 		width: 100%;
@@ -172,7 +172,7 @@ hr.main__divider {
 		margin: inherit;
 	}
 
-	.projects__billede {
+	.projects__img {
 		max-width: 610px;
 		width: 100%;
 		height: auto;
