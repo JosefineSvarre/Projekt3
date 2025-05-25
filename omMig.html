@@ -22,7 +22,7 @@
     <header class="header">
       <nav class="navbar">
         <a href="index.html" class="navbar__logo">
-          <img class="navbar__logo-image" src="image/logoHeader.svg" alt="Logo">
+          <img class="navbar__logo-image" src="./assets/img/logoHeader.svg" alt="Logo">
           <span class="navbar__logo-text">Josefine Svarre</span>
         </a>
 
@@ -31,6 +31,8 @@
         </button>
         
         <ul class="navbar__list">
+					<li class="navbar__close">✕</li>
+					<li><a href="index.html">Forside</a></li>
           <li><a href="omMig.html" class="active">Om mig</a></li>
           <li><a href="projects.html">Projekter</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
@@ -38,7 +40,7 @@
       </nav>
     </header>
 
-    <main class="grid grid--halfHalfFull">
+    <main>
       <section class="section section--full">
         <div class="section__content mobileSpace">
           <div>
@@ -56,24 +58,22 @@
             <p class="omMig__textdel">
               <strong>Jeg er særligt optaget af branding og visuel kommunikation</strong>, og jeg elsker at fordybe mig i grafiske projekter, der engagerer, inspirerer og forbinder mennesker. Jeg er altid klar til nye udfordringer og ser frem til at samarbejde med passionerede teams, der sætter kvalitet og kreativitet i højsæde.
             </p>
-          </div>
 
-          <div>
             <p>Lyder det som jer?</p>
             <a href="kontakt.html" class="button">Så lad os tage en snak!</a>
           </div>
 
-          <div>
+          <div class="text-center">
             <img src="image/OmMig/billedeOmMig.webp" alt="Josefine Svarre med en hat på hovedet og smilende til kameraret.">
           </div>
         </div>
       </section>
 
-      <section class="section section--full">
-        <div class="section__content mobileSpace">
+      <section class="section">
+        <div class="section__content mobileSpace sectionContent--span2column full-width">
           <h3>Min værktøjskasse</h3>
 
-          <div class="imgGrid imgGrid--3column">
+          <div class="imgGrid imgGrid--3column imgGrid--9columnDesktop sectionContent--span2column">
             <img class="toolImg" src="image/omMig/aE.svg" alt="After Effects">
             <img class="toolImg" src="image/omMig/aP.svg" alt="Premiere Pro">
             <img class="toolImg" src="image/omMig/aI.svg" alt="Illustrator">
@@ -88,33 +88,35 @@
       </section>
 
       <section class="section section--full">
-        <section class="section__content mobileSpace">
+        <div class="section__content mobileSpace">
           <h3>Faglig anbefaling</h3>
-          <blockquote>
-            <p class="anbefaling__text">
-              <i>I egenskab af lektor ved Institut for Idræt og Biomekanik ved Syddansk Universitet mødte jeg Josefine i forskellige faglige kontekster over en 5-årig periode. Senest fungerede jeg som specialevejleder for hende.</i>
-            </p>
-
-            <p class="anbefaling__text">
-              <i>I mange år har jeg skrevet anbefalinger for studerende, men det er sjældent, at man ville ønske, man selv kunne ansætte personen. Og når man skriver at man medgiver de bedste anbefalinger, så er det sjældent, at det helt er tilfældet. I dette tilfælde så er der tale om en studerende som jeg til enhver tid vil kunne stå inde for og jeg medgiver hende de absolut bedste og mest rosende ord.</i>
-            </p>
-
-            <p class="anbefaling__text">
-              <i>Josefine er en ydmyg, højintelligent pige med et stærkt analytisk blik på livet generelt og faglige stofområder i særdeleshed. Hun er meget produktiv, flittig og mødestabil. Hun er i stand til at løse såvel bundne som frie opgaver med stor selvstændighed.</i>
-            </p>
-
-            <p class="anbefaling__text">
-              <i>Uanset hvilke stillingstyper Josefine vælger at søge, så er det min vurdering, at hun vil blive en gevinst for sin arbejdsgiver. Giv hende lidt ansvar, og så vil hun hurtigt kunne blive en vigtig og betydelig ansat.</i>
-            </p>
-          </blockquote>
           <div>
-            <img
-              src="image/OmMig/underskrift.svg"
-              alt="Underskrift fra Jan Toftegaard Støckel"
-            >
-            <p>Jan Toftegaard Støckel</p>
+            <blockquote>
+              <p class="anbefaling__text">
+                <i>I egenskab af lektor ved Institut for Idræt og Biomekanik ved Syddansk Universitet mødte jeg Josefine i forskellige faglige kontekster over en 5-årig periode. Senest fungerede jeg som specialevejleder for hende.</i>
+              </p>
+
+              <p class="anbefaling__text">
+                <i>I mange år har jeg skrevet anbefalinger for studerende, men det er sjældent, at man ville ønske, man selv kunne ansætte personen. Og når man skriver at man medgiver de bedste anbefalinger, så er det sjældent, at det helt er tilfældet. I dette tilfælde så er der tale om en studerende som jeg til enhver tid vil kunne stå inde for og jeg medgiver hende de absolut bedste og mest rosende ord.</i>
+              </p>
+
+              <p class="anbefaling__text">
+                <i>Josefine er en ydmyg, højintelligent pige med et stærkt analytisk blik på livet generelt og faglige stofområder i særdeleshed. Hun er meget produktiv, flittig og mødestabil. Hun er i stand til at løse såvel bundne som frie opgaver med stor selvstændighed.</i>
+              </p>
+
+              <p class="anbefaling__text">
+                <i>Uanset hvilke stillingstyper Josefine vælger at søge, så er det min vurdering, at hun vil blive en gevinst for sin arbejdsgiver. Giv hende lidt ansvar, og så vil hun hurtigt kunne blive en vigtig og betydelig ansat.</i>
+              </p>
+            </blockquote>
+            <div>
+              <img
+                src="image/OmMig/underskrift.svg"
+                alt="Underskrift fra Jan Toftegaard Støckel"
+              >
+              <p>Jan Toftegaard Støckel</p>
+            </div>
+          </div>
         </div>
-        </section>
       </section>
     </main>
 

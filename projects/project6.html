@@ -12,23 +12,24 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,400&family=Rammetto+One&display=swap" rel="stylesheet">
 
 		<title>Projekt: Foldet formidling</title>
-		<link rel="stylesheet" href="../global.css">
-		<link rel="stylesheet" href="undersider.css">
+		<link rel="stylesheet" href="../assets/css/main.css">
 	</head>
 
 	<body>
 		<header class="header">
 			<nav class="navbar">
 				<a href="../index.html" class="navbar__logo">
-					<img class="navbar__logo-image" src="../image/logoHeader.svg" alt="Logo">
+					<img class="navbar__logo-image" src="../assets/img/logoHeader.svg" alt="Logo">
 					<span class="navbar__logo-text">Josefine Svarre</span>
 				</a>
 
 				<button class="navbar__toggle" aria-label="Åbn navigation.">
-          ☰
-        </button>
+					☰
+				</button>
 
 				<ul class="navbar__list">
+					<li class="navbar__close">✕</li>
+					<li><a href="../index.html">Forside</a></li>
 					<li><a href="../omMig.html">Om mig</a></li>
 					<li><a href="../projects.html">Projekter</a></li>
 					<li><a href="../kontakt.html">Kontakt</a></li>
@@ -37,154 +38,146 @@
 		</header>
 
 		<main>
-      <section class="projekt">
-        <div class="projekt__hero">
-          <img class="projekt__heroBillede" src="../image/Produktbilleder/projekt6.webp" alt="To brochurere, hvor den ene overlapper den anden.">
-          <div class="projekt__heroTekst">
-            <h1 class="projekt__titel">Foldet formidling</h1>
-            <h2 class="projekt__undertitel">En brochure med brand og balance.</h2>
-            <div class="projekt__info">
-              <p class="projekt__infotekst">Format: Trykt Z-fold brochure.</p>
-              <p class="projekt__infotekst">Værktøjer: Adobe InDesign · fysisk prototype</p>
-            </div>
+      <section class="section section--full">
+        <div class="section__content mobileSpace">
+          <div>
+            <img src="../image/Produktbilleder/Projekt6.webp" alt="En animation med en pige, der sidder på gulvet og trykker på en pauseknap.">
           </div>
-        </div>
 
-        <div class="projekt__intro">
-          <h3 class="projekt__introOverskrift">Introduktion</h3>
-          <p class="projekt__introTekst">
-            "Foldet formidling" er et designprojekt, der præsenterer multimediedesignuddannelsen på UCL gennem en fysisk, trykt brochure. Designet balancerer æstetik og funktionalitet, og tager udgangspunkt i UCL’s visuelle identitet. Med et klart og indbydende layout guides læserne gennem informationerne på en let og engagerende måde.
-          </p>
-        </div>
+          <div>
+            <h2>Foldet formidling</h2>
+            <p>En brochure med brand og balance.</p>
+            <p class="text--lowlight">
+              Format: Trykt Z-fold brochure.<br>
+              Værktøjer: Adobe InDesign · fysisk prototype
+            </p>
 
-        <div class="projekt__udfordringOgLoesning">
-          <div class="projekt__udfordring">
-            <h3 class="projekt__overskrift">Udfordring</h3>
-            <p class="projekt__tekst">
+            <h3>Introduktion</h3>
+            <p>
+              "Foldet formidling" er et designprojekt, der præsenterer multimediedesignuddannelsen på UCL gennem en fysisk, trykt brochure. Designet balancerer æstetik og funktionalitet, og tager udgangspunkt i UCL’s visuelle identitet. Med et klart og indbydende layout guides læserne gennem informationerne på en let og engagerende måde.
+            </p>
+          </div>
+
+          <div>
+            <h3>Udfordringer</h3>
+            <p>
               Hvordan skaber man en trykt brochure, der både er indbydende, overskuelig og tro mod et eksisterende brand?
             </p>
-            <p class="projekt__listeOverskrift"><strong>Målet var at skabe:</strong></p>
-            <ul class="projekt__liste">
+            <p><strong>Målet var at skabe:</strong></p>
+            <ul>
               <li>En intuitiv og brugervenlig læserytme.</li>
               <li>Et balanceret visuelt hierarki.</li>
               <li>Et design, der er i tråd med UCL’s brand og visuelle retningslinjer.</li>
             </ul>
           </div>
 
-          <div class="projekt__loesning">
-            <h3 class="projekt__overskrift">Løsning</h3>
-            <p class="projekt__tekst">
+          <div>
+            <h3>Løsning</h3>
+            <p>
               Projektet tog afsæt i en fysisk prototype, der dannede grundlag for det videre arbejde i InDesign. Formatet er en Z-fold, der understøtter en naturlig progression i læsningen og skaber plads til opdeling af indholdet i logiske sektioner.
             </p>
 
-            <p class="projekt__nøgleoverskrift"><strong>Nøgleelementer:</strong></p>
-            <ul class="projekt__liste">
+            <p><strong>Nøgleelementer:</strong></p>
+            <ul>
               <li>Gridstruktur for visuel konsistens og overblik.</li>
               <li>Paragraph Styles og hjælpelinjer for en effektiv arbejdsproces.</li>
               <li>Strategisk brug af whitespace og alignment for at skabe visuel ro og tydelig navigation.</li>
             </ul>
           </div>
-        </div>
 
-        <div class="projekt__galleri">
-          <img class="projekt__galleriBillede" src="../projects/billederUndersider/p6billede1.webp" alt="Forside og bagside af brochuren.">
-          <img class="projekt__galleriBillede" src="../projects/billederUndersider/p6Billede2.webp" alt="Indholdet af brochuren.">
-          <img class="projekt__galleriBillede" src="../projects/billederUndersider/p6Billede3.webp" alt="Indholdet af brochuren.">
-<!-- Tilføj flere billeder efter behov -->
-        </div>
+          <div class="sectionContent--span2column imgGrid imgGrid--mobile2column imgGrid-desktop4column">
+            <img src="../assets/img/project-images/p6billede1.webp" alt="Forside og bagside af brochuren.">
+            <img src="../assets/img/project-images/p6Billede2.webp" alt="Indholdet af brochuren.">
+            <img src="../assets/img/project-images/p6Billede3.webp" alt="Indholdet af brochuren.">
+          </div>
 
-        <div class="projekt__tekstBilledeSektion">
-          <div class="projekt__tekstKolonne">
-            <h3 class="projekt__overskrift">Designmæssige valg</h3>
-            <p class="projekt__tekst">
+          <div>
+            <h3>Designmæssige valg</h3>
+            <p>
               Designet er skabt med respekt for UCL’s styleguide og anvender farverne Midnight Green, Verdigris og Columbia Blue – med Maize som kontrast. Målet var at skabe et udtryk, der balancerer mellem professionalitet og tilgængelighed.
             </p>
-            <p class="projekt__listeOverskrift"><strong>Layoutet er præget af:</strong></p>
-            <ul class="projekt__liste">
+            <p><strong>Layoutet er præget af:</strong></p>
+            <ul>
               <li>Harmonisk farvebrug og rolig typografi.</li>
               <li>Lagdeling og transparens for visuel dybde.</li>
               <li>Et moderne og afbalanceret udtryk, der guider læseren uden at forstyrre.</li>
             </ul>
           </div>
 
-          <div class="projekt__billedeKolonne">
-            <img class="projekt__tekstBillede" src="../projects/billederUndersider/p6Stort.webp" alt="Billede af UCL's styleguide, der viser farverne Midnight Green, Verdigris og Columbia Blue.">
+          <div>
+            <img src="../assets/img/project-images/p6Stort.webp" alt="Billede af UCL's styleguide, der viser farverne Midnight Green, Verdigris og Columbia Blue.">
+          </div>
+
+          <div>
+            <h3>Fagligt udbytte</h3>
+            <p>
+              Projektet har styrket mine kompetencer inden for visuel formidling og givet mig erfaring med at forene æstetik, funktion og brandloyalitet i et trykt medie.
+            </p>
+            
+            <p><strong>Jeg har opnået:</strong></p>
+            <ul>
+              <li>Indsigt i praktisk brandtilpasning.</li>
+              <li>En skærpet forståelse for informationsstruktur.</li>
+              <li>Erfaring med at udvikle og fastholde et æstetisk og narrativt udtryk over tid.</li>
+              <li>Erfaring med at designe tryksager, der både er funktionelle og visuelt engagerende.</li>
+            </ul>
+            <p>
+              Disse erfaringer tager jeg med mig i fremtidige projekter, hvor fysisk formidling og visuel identitet skal spille tæt sammen.
+            </p>
+          </div>
+
+          <div class="sectionContent--span2column">
+            <p>Tags:</p>
+            <ul class="tagList">
+              <li class="tagList__item">Brand-tryllerier</li>
+              <li class="tagList__item">Z-fold</li>
+              <li class="tagList__item">Visuel identitet</li>
+              <li class="tagList__item">Printdesign</li>
+              <li class="tagList__item">Brandtilpasning</li>
+              <li class="tagList__item">Manuskript</li>
+              <li class="tagList__item">Grid-guru</li>
+              <li class="tagList__item">InDesign</li>
+              <li class="tagList__item">Informationsstruktur</li>
+              <li class="tagList__item">Layout</li>
+              <li class="tagList__item">Typografi</li>
+            </ul>
+  <!-- Tilføj flere tags efter behov -->
+          </div>
+
+          <div class="projekt__cta sectionContent--span2column text-center">
+            <a href="../projects.html" class="button button--center button--large">Er du interesseret i at se flere projekter?</a>
           </div>
         </div>
-
-        <div class="projekt__laering">
-          <h3 class="projekt__overskrift">Fagligt udbytte</h3>
-          <p class="projekt__tekst">
-            Projektet har styrket mine kompetencer inden for visuel formidling og givet mig erfaring med at forene æstetik, funktion og brandloyalitet i et trykt medie.
-          </p>
-          
-          <p class="projekt__listeOverskrift"><strong>Jeg har opnået:</strong></p>
-          <ul class="projekt__liste">
-            <li>Indsigt i praktisk brandtilpasning.</li>
-            <li>En skærpet forståelse for informationsstruktur.</li>
-            <li>Erfaring med at udvikle og fastholde et æstetisk og narrativt udtryk over tid.</li>
-            <li>Erfaring med at designe tryksager, der både er funktionelle og visuelt engagerende.</li>
-          </ul>
-          <p class="projekt__tekst">
-            Disse erfaringer tager jeg med mig i fremtidige projekter, hvor fysisk formidling og visuel identitet skal spille tæt sammen.
-          </p>
-        </div>
-
-        <div class="projekt__tags">
-          <p class="projekt__tagsTitel">Tags:</p>
-          <ul class="projekt__tagsListe">
-            <li class="projekt__tag">Brand-tryllerier</li>
-            <li class="projekt__tag">Z-fold</li>
-            <li class="projekt__tag">Visuel identitet</li>
-            <li class="projekt__tag">Printdesign</li>
-            <li class="projekt__tag">Brandtilpasning</li>
-            <li class="projekt__tag">Manuskript</li>
-            <li class="projekt__tag">Grid-guru</li>
-            <li class="projekt__tag">InDesign</li>
-            <li class="projekt__tag">Informationsstruktur</li>
-            <li class="projekt__tag">Layout</li>
-            <li class="projekt__tag">Typografi</li>
-          </ul>
-<!-- Tilføj flere tags efter behov -->
-        </div>
-
-        <div class="projekt__cta">
-          <a href="../projects.html" class="projekt__ctaKnap">Er du interesseret i at se flere projekter?</a>
-        </div>
-
       </section>
     </main>
 
 		<footer class="footer">
-			<img class="footer__logoImageMobile" src="../image/logoFooter.svg" alt="Logo">
-
 			<div class="footer__content">
-				<section class="footer__contact">
-					<h3 class="footer__heading">Kontakt</h3>
-					<p class="footer__text">Josefine Svarre</p>
-					<p class="footer__text"><a href="tel:+4520912213">20 91 22 13</a></p>
-					<p class="footer__text">
-						<a href="mailto:josefinesvarre@hotmail.com">Josefinesvarre@hotmail.com</a>
-					</p>
-				</section>
+				<div class="footer__logo">
+					<img class="footer__logo-image" src="../image/logoFooter.svg" alt="Logo">
+				</div>
 
-				<div class="footer__divider--vertical"></div>
-				<div class="footer__divider--horizontal"></div>
+				<div class="footer__contact">
+					<h3>Kontakt</h3>
+					<ul>
+						<li>Josefine Svarre</li>
+						<li><a href="tel:+4520912213">20 91 22 13</a></li>
+						<li><a href="mailto:josefinesvarre@hotmail.com">josefinesvarre@hotmail.com</a></li>
+					</ul>
+				</div>
 
 				<div class="footer__nav">
-					<h3 class="footer__heading">Navigation</h3>
-					<p class="footer__text"><a href="../omMig.html">Om mig</a></p>
-					<p class="footer__text"><a href="../projects.html">Projekter</a></p>
-					<p class="footer__text"><a href="../kontakt.html">Kontakt</a></p>
+					<h3>Navigation</h3>
+					<ul>
+						<li><a href="omMig.html">Om mig</a></li>
+						<li><a href="projects.html">Projekter</a></li>
+						<li><a href="kontakt.html">Kontakt</a></li>
+					</ul>
 				</div>
-				
-				<img src="../image/logoFooter.svg" alt="Logo" class="footer__logoDesktop">
-			</div>
 
-			<div class="footer__divider"></div>
-
-			<div class="footer__copyright">
-				<p class="footer__text">Copyright © 2025 Josefine Svarre</p>
+				<div class="footer__copyright">
+					<p class="footer__text">Copyright © 2025 Josefine Svarre</p>
+				</div>
 			</div>
 		</footer>
 

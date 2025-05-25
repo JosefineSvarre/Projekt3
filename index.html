@@ -19,7 +19,7 @@
 		<header class="header">
 			<nav class="navbar">
 				<a href="index.html" class="navbar__logo">
-					<img class="navbar__logo-image" src="image/logoHeader.svg" alt="Logo">
+					<img class="navbar__logo-image" src="./assets/img/logoHeader.svg" alt="Logo">
 					<span class="navbar__logo-text">Josefine Svarre</span>
 				</a>
 
@@ -28,6 +28,8 @@
 				</button>
 
 				<ul class="navbar__list">
+					<li class="navbar__close">✕</li>
+					<li><a href="index.html">Forside</a></li>
 					<li><a href="omMig.html">Om mig</a></li>
 					<li><a href="projects.html">Projekter</a></li>
 					<li><a href="kontakt.html">Kontakt</a></li>
@@ -45,40 +47,45 @@
 				</div>
 			</section>
 
-			<section class="about section section--full grid grid--halfHalf grid__halfHalf--reverseMobile">
-				<div class="grid__halfLeft mobileHide">
-					<img
-						class="about__img"
-						src="./assets/img/pige1.svg" alt= "En grafisk illustration af en pige, der sidder i skræderstilling med en computer på skødet og arbejder.">
-				</div>
+			<section class="about section section--full">
+				<div class="section__content mobileSpace">
+					<div class="mobileHide">
+						<img
+							src="./assets/img/pige1.svg" alt= "En grafisk illustration af en pige, der sidder i skræderstilling med en computer på skødet og arbejder.">
+					</div>
 
-				<div class="section__content grid__halfRight mobileSpace">
-					<h3 class="about__heading">Lidt om mig</h3>
-					<p class="about__text">
-					Jeg er multimediedesign-studerende med passion for grafisk design,
-					branding og visuel kommunikation.
-					</p>
-					<p class="about__text">
-					Jeg tror på farver, der kommunikerer, linjer der leder, og design der gør en forskel – både følelsesmæssigt og funktionelt. Jeg trives i kreative miljøer, hvor idéer udvikles i fællesskab, og hvor æstetik og funktion går hånd i hånd.
-					</p>
-					<a href="omMig.html" class="button">Læs mere</a>
+					<div class="sectionContent-flexJustifyCenter">
+						<h3 class="about__heading">Lidt om mig</h3>
+						<p class="about__text">
+						Jeg er multimediedesign-studerende med passion for grafisk design,
+						branding og visuel kommunikation.
+						</p>
+						<p class="about__text">
+						Jeg tror på farver, der kommunikerer, linjer der leder, og design der gør en forskel – både følelsesmæssigt og funktionelt. Jeg trives i kreative miljøer, hvor idéer udvikles i fællesskab, og hvor æstetik og funktion går hånd i hånd.
+						</p>
+						<a href="omMig.html" class="button">Læs mere</a>
+					</div>
 				</div>
 			</section>
 
 			<section class="projects section section--full">
 				<div class="section__content mobileSpace">
-					<h3 class="projects__heading">Lidt om mine projekter</h3>
-					<p class="projects__text">
-					Jeg arbejder i krydsfeltet mellem strategi og kreativitet - hvor data bliver til indsigter, og idéer bliver til meningsfulde, digitale løsninger. Jeg designer med nysgerrighed som drivkraft og brugeren som pejlemærke. Om det er en animation, en visuel identitet eller et grafisk layout – målet er det samme:
-					</p>
-					<p class="projects__text">
-						At skabe produkter, der vækker følelser, fremkalder reaktioner,
-					og gør en forskel.
-					</p> 
-					<a href="projects.html" class="button">Se projekter</a>
-					<img
-						class="projects__img"
-						src="./assets/img/pige1.svg" alt="en grafisk illustration af en pige , der har sine arme over kors og kigger lidt op.">
+					<div class="sectionContent-flexJustifyCenter">
+						<h3 class="projects__heading">Lidt om mine projekter</h3>
+						<p class="projects__text">
+						Jeg arbejder i krydsfeltet mellem strategi og kreativitet - hvor data bliver til indsigter, og idéer bliver til meningsfulde, digitale løsninger. Jeg designer med nysgerrighed som drivkraft og brugeren som pejlemærke. Om det er en animation, en visuel identitet eller et grafisk layout – målet er det samme:
+						</p>
+						<p class="projects__text">
+							At skabe produkter, der vækker følelser, fremkalder reaktioner,
+						og gør en forskel.
+						</p> 
+						<a href="projects.html" class="button">Se projekter</a>
+					</div>
+					<div class="text-center">
+						<img
+							class="projects__img"
+							src="./assets/img/pige2.svg" alt="en grafisk illustration af en pige , der har sine arme over kors og kigger lidt op.">
+					</div>
 				</div>
 			</section>
 		</main>
