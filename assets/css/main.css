@@ -97,10 +97,6 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
-	color: var(--color-link-hover);
-}
-
 ul {
 	font-family: var(--font-secondary);
 	font-weight: 300;
@@ -113,11 +109,6 @@ ul {
 
 li {
 	margin-bottom: 0.5rem; /* lidt luft mellem punkterne */
-}
-
-strong {
-	color: var(--color-strong);
-	font-weight: 500;
 }
 
 .text--lowlight {
@@ -146,8 +137,12 @@ strong {
 }
 
 @media (min-width: 768px) {
+	h1 {
+		font-size: 5rem; /* 80px, ups omkring 40px er anbefalet. */
+	}
+
 	h2 {
-		font-size: 1.3rem; /* 20px */
+		font-size: 1.6rem; /* 25px */
 		line-height: 1.4;
 		margin-top: 2.5rem;
 	}
@@ -167,16 +162,6 @@ strong {
 		font-size: 1.125rem; /* 18px */
 		line-height: 1.6;
 		margin-bottom: 1rem;
-	}
-
-	h1 {
-		font-size: 5rem; /* 80px, ups omkring 40px er anbefalet. */
-	}
-
-	h2 {
-		font-size: 1.6rem; /* 25px */
-		line-height: 1.4;
-		margin-top: 2.5rem;
 	}
 
 	blockquote {
@@ -265,7 +250,7 @@ video {
 }
 
 .imgGrid--mobile2column {
-	grid-templaterte-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .imgGrid--3column {
