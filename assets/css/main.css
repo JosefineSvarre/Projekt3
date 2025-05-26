@@ -251,6 +251,7 @@ video {
 .imgGrid {
 	display: grid;
 	gap: var(--default-spacing, 1.4rem);
+	width: 100%;
 }
 
 .imgGrid--mobile2column {
