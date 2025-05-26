@@ -233,6 +233,11 @@ video {
 	width: 25rem;
 	place-self: center;
 }
+
+.video--halfWidth {
+	width: 25rem;
+	place-self: center;
+}
 }
 
 /* ------------------------------------------ */
