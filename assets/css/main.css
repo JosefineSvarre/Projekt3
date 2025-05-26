@@ -14,7 +14,7 @@
 	--color-pills: var(--color-button);
 	--color-link-hover: #4d79a1; 
 	--default-border-radius: 2.5rem;
-	--default-spacing: 1.5rem;
+	--default-spacing: 1.5rem; /* standard spacing for margins og paddings */
 	--line-height: 1.8;
 
 	--font-primary: "Rammetto One", sans-serif;
@@ -481,6 +481,16 @@ video {
 
 	.footer__logo {
 		align-self: center;
+		align-items: flex-start;
+	}
+
+	.footer__logo {
+	align-items: flex-start; /* Venstrestil logoet */
+}
+
+	.footer__copyright {
+		grid-area: copyright;
+		margin-top: 7rem;
 	}
 }
 
