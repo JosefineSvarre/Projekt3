@@ -10,9 +10,10 @@
 	--color-button--text: #222222;
 	--color-heading-h3: #dddddd;
 	--color-button: #6e98c2;
+	--color-highligt: #6e98c2;
 	--color-button-hover: #4d79a1;
-	--color-pills: var(--color-button);
 	--color-link-hover: #4d79a1; 
+	--color-pills: var(--color-button);
 	--default-border-radius: 2.5rem;
 	--default-spacing: 1.5rem; /* standard spacing for margins og paddings */
 	--line-height: 1.8;
@@ -59,6 +60,8 @@ h1 {
 	font-family: var(--font-primary);
 	font-size: 3.25rem; /* 52px */
 	letter-spacing: 0.1rem;
+	line-height: 1;
+	margin-top: 1rem;
 }
 
 h2 {
@@ -67,6 +70,7 @@ h2 {
 	font-style: italic;
 	font-size: 1.5rem; /* 24px */
 	letter-spacing: 0.1em;
+
 }
 
 h3 {
@@ -81,7 +85,7 @@ h4 {
 	font-weight: 300;
 	font-style: italic;
 	font-size: 1.4rem; /* 22.4px */
-	margin-bottom: 1rem;
+	margin: 1rem 0 3rem 0;
 }
 
 p {
@@ -117,6 +121,10 @@ li {
 .text--lowlight {
 	color: #ccc;
 	font-size: 0.75rem;
+}
+
+.text--highligt {
+	color: var(--color-highligt);
 }
 
 .text-center {
@@ -157,9 +165,8 @@ li {
 
 	h4 {
 		font-size: 1.25rem; /* 20px */
-		line-height: 2;
+		line-height: 1.7;
 		font-size: 2rem; /* 32px */
-		margin-bottom: 1rem;
 	}
 
 	p {
@@ -235,9 +242,13 @@ video {
 .section__content {
 	display: grid;
 	grid-template-columns: 1fr;
-	gap: 3rem;
+	gap: 0.5rem;
 	justify-items: start;
 	padding: 4rem 0;
+}
+
+.section__contentProject {
+	gap: 2rem;
 }
 
 .mobileHide {
@@ -507,15 +518,12 @@ video {
 	background-position: 66% center;
 }
 
-.front__name {
-	line-height: 1;
-}
-
 .front__description {
 	color: var(--color-text);
 	grid-column: 1 / 1;
 	line-height: 1.4;
 	text-align: left;
+	margin-top: 0;
 }
 
 .about__img {
