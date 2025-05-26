@@ -228,6 +228,13 @@ video {
 	transform: scaleX(-1);
 }
 
+@media (min-width: 768px) {
+.imgHeroRight {
+	width: 25rem;
+	place-self: center;
+}
+}
+
 /* ------------------------------------------ */
 /*               STRUCTURE RULES              */
 /* ------------------------------------------ */
