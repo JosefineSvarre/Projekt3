@@ -127,7 +127,11 @@ li {
 	color: var(--color-highligt);
 }
 
-.text-center {
+.text--spacing {
+	margin: 2rem auto 0 auto;
+	}
+
+.text--center {
 	text-align: center;
 	width: 100%;
 }
@@ -586,10 +590,6 @@ video {
 .contact__text {
 	margin: 0 0;
 }
-
-.contact__mail {
-	margin: 2rem auto 0 auto;
-	}
 
 .contact__mail a:hover,
 .contact__tlf a:hover {
