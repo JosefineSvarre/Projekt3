@@ -221,6 +221,13 @@ li {
 	font-size: 1.4rem;
 }
 
+.buttons-container {
+  display: flex;
+  justify-content: center;  /* Centrer knapperne horisontalt */
+	margin-top: 3rem;
+  gap: 1rem;
+}
+
 /* ------------------------------------------ */
 /*               MEDIER.                      */
 /* ------------------------------------------ */
