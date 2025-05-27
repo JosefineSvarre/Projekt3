@@ -605,6 +605,11 @@ video {
 .toolImg {
 	border-radius: 0;
 }
+
+.omMig__img {
+	margin-top: 1rem;
+}
+
 @media (min-width: 768px) {
 .quote__textStart {
 	margin-top: 6rem;
