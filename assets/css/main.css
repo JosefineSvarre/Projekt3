@@ -15,7 +15,7 @@
 	--color-button--secondary: #6e98c2;
 	--color-button--primary-hover: #aa4d00;
 	--color-button--secondary-hover: #4d79a1;
-	--color-pills: var(--color-button);
+	--color-pills: var(--color-button--secondary);
 	--default-border-radius: 2.5rem;
 	--default-spacing: 1.5rem; /* standard spacing for margins og paddings */
 	--line-height: 1.8;
