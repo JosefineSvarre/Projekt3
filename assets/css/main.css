@@ -86,7 +86,7 @@ h4 {
 
 p {
 	font-family: var(--font-secondary);
-	font-weight: 200;
+	font-weight: 300;
 	font-size: 1rem; /* 16px */
 	margin-bottom: 1rem;
 }
@@ -171,6 +171,7 @@ li {
 
 	p {
 		font-size: 1.125rem; /* 18px */
+		font-weight: 200;
 		line-height: 1.6;
 		margin-bottom: 1rem;
 	}
@@ -552,11 +553,19 @@ video {
 	max-width: 38.125rem;
 }
 
+.front__name {
+	margin-top: 7rem;
+}
+
 @media (min-width: 768px) {
 	.front {
 		background-size: cover; /* dækker hele containeren */
 		background-position: center 20%;
 	}
+
+	.front__name {
+	margin-top: 0;
+}
 }
 
 /* ------------------------------------------ */
