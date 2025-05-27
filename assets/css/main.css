@@ -23,6 +23,7 @@
 }
 
 /* ---------- RESET STYLES ----------- */
+/* Her nulstiller jeg browserens standardindstillinger */
 * {
 	box-sizing: border-box;
 }
@@ -35,12 +36,6 @@ body {
 	color: var(--color-text); /* standard farve til tekst */
 	font-family: var(--font-secondary); /* standard font for body*/
 }
-
-/*
-* {
-	border: 1px dotted deeppink;
-}
-*/
 
 /* ---------------------------------------- */
 /*               TYPOGRAFI                  */
