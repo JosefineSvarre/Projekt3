@@ -10,7 +10,7 @@
 	--color-heading-h3: #dddddd;
 	--color-highligt: #6e98c2;
 	--color-link-hover: #4d79a1; 
-	--color-button--text: #222222;
+	--color-button--text: #1A1A1A;
 	--color-button--primary: #ca6702;
 	--color-button--secondary: #6e98c2;
 	--color-button--primary-hover: #aa4d00;
@@ -190,7 +190,7 @@ li {
 	padding: calc(var(--default-spacing, 1.4rem) * 0.5)
 		var(--default-spacing, 1.4rem);
 	border-radius: var(--default-border-radius, 2.5rem);
-	color: var(--color-button--text, #222222);
+	color: var(--color-button--text, #1A1A1A);
 }
 
 .button--primary{
