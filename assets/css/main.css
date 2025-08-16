@@ -30,8 +30,8 @@
 }
 
 /* ---------- BASALE STYLES ---------- */
-body {
-	margin: 0;
+body { /*selektor*/
+	margin: 0; /*deklaration*/
 	padding: 0;
 	background-color: var(--color-background);
 	color: var(--color-text); /* standard farve til tekst */
@@ -261,10 +261,14 @@ video {
 /*               STRUCTURE RULES              */
 /* ------------------------------------------ */
 
+/*Gør alle `<section>`-elementer med klassen `.section` til "flex-containere".  
+/*Standardretning for flex er `row`, så deres indhold (her .section__content) bliver lagt vandret, medmindre andet er angivet.*/
 .section {
 	display: flex;
 }
 
+/* Denne klasse tilføjes oven i .section.
+Gør at alle sektioner strækker sig over hele højden af deres container, og centrerer indholdet både lodret og vandret. */
 .section--full {
 	align-items: center;
 	height: 100%;
@@ -272,6 +276,7 @@ video {
 	min-height: 100vh;
 }
 
+/*Mit indhold bliver stablet lodret med lidt luft imellem, venstrejusteret, og med god top/bund-margin.*/
 .section__content {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -315,6 +320,10 @@ video {
 		display: block;
 	}
 
+ /*`section__content` har normalt kun **én kolonne** (på mobil).  
+Ved 768px skifter det til to kolonner med lige bredde.
+Det betyder, at mit indhold nu automatisk deles op i to kolonner –
+og hvis jeg har to `div`s inde i en `section__content`, vil de stå side om side i stedet for oven på hinanden.*/
 	.section__content {
 		grid-template-columns: 1fr 1fr;
 	}
@@ -323,6 +332,13 @@ video {
 		grid-column: 1 / 3; /* Gør at elementet strækker sig over begge kolonner */
 	}
 
+
+/*Denne klasse skifter layout fra grid til flex (lodret kolonne).  
+Det bruges typisk til tekstindhold ved siden af et billede.
+📌 Effekten er:
+- Indholdet står stadig lodret.
+- Det er centreret lodret i forhold til nabo-kolonnen (fx et billede).
+- Der er luft (`gap`) mellem elementerne.*/
 	.sectionContent-flexJustifyCenter {
 		display: flex;
 		flex-direction: column;
